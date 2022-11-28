@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import LoginForm from './Pages/LoginForm';
 import SignUpForm from './Pages/SignUpForm';
@@ -10,6 +9,7 @@ function App() {
 
 
       <LandingPage/>
+      
       
     </div>
   );
