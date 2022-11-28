@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .square {
+        aspect-ratio: 1/1;
+    }
+}
+@layer components {
+    /* input{
+      @apply   border p-2 md:py-4 rounded-lg border-[#FB7F6B] outline-none bg-slate-400/10  border-b px-6 py-4  transition-all focus:border-[#F7AB0A] focus:text-[#F7AB0A]
+    } */
+    /* .sign>input,input,.file{
+      @apply outline-none tracking-wider w-[400px] md:w-[400px] bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#FB7F6B] text-gray-500 placeholder-gray-500 transition-all focus:border-[#724e02] focus:text-[#FB7F6B]
+    } */
+    /* bg-[#EE7A29] */
+    .laptop>li{
+        @apply outline-none md:px-3 text-lg lg:text-xl cursor-pointer text-white/30 hover:text-white font-medium
+    } 
+    .li>li{
+      @apply outline-none md:mx-4 text-lg lg:text-xl cursor-pointer text-black/80 hover:text-black/80 font-medium w-fit 
+  } 
+  .li>caption{
+    @apply font-bold text-black text-center
+} 
+.cardhero{
+    font-family: PT Serif;
+}
+}
