@@ -17,4 +17,8 @@
   } 
   .li>caption{
     @apply font-bold text-black text-center
-} }
+} 
+.cardhero{
+    font-family: PT Serif;
+}
+}
