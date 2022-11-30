@@ -8,7 +8,7 @@ const initialState = {
   full_name: "",
   email: "",
   phone_number: '',
-  _id: "",
+  id: "",
   location:'',
   user_type:'',
   verification_status:'',
@@ -37,7 +37,7 @@ export const registerUser = createAsyncThunk(
 
       localStorage.setItem("token", token.data);
 
-      return token.data;
+      // return token.data;
     } catch (error) {
       console.log(error.response.data);
       return rejectWithValue(error.response.data);
@@ -93,7 +93,7 @@ const authSlice = createSlice({
           token,
           name: user.name,
           email: user.email,
-          _id: user._id,
+          id: user.id,
           isAdmin: user.isAdmin,
           userLoaded: true,
         };
@@ -107,7 +107,7 @@ const authSlice = createSlice({
         token: "",
         name: "",
         email: "",
-        _id: "",
+        id: "",
         isAdmin: false,
         registerStatus: "",
         registerError: "",
@@ -128,7 +128,7 @@ const authSlice = createSlice({
           token: action.payload,
           name: user.name,
           email: user.email,
-          _id: user._id,
+          id: user.id,
           isAdmin: user.isAdmin,
           registerStatus: "success",
         };
@@ -152,7 +152,7 @@ const authSlice = createSlice({
           token: action.payload,
           name: user.name,
           email: user.email,
-          _id: user._id,
+          id: user.id,
           isAdmin: user.isAdmin,
           loginStatus: "success",
         };
@@ -179,7 +179,7 @@ const authSlice = createSlice({
           token: action.payload,
           name: user.name,
           email: user.email,
-          _id: user._id,
+          id: user.id,
           isAdmin: user.isAdmin,
           getUserStatus: "success",
         };
