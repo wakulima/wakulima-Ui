@@ -5,12 +5,12 @@ import UserContactComponent from '../components/UserContactComponent'
 
 function ChatPage() {
   return (
-    <div>
+    <div className=''>
       
-      <div className="container mx-auto shadow-lg rounded-lg">
+      <div className="h-screen container mx-auto shadow-lg rounded-lg">
     
     <div className="px-5 py-5 flex justify-between items-center bg-white border-b-2">
-      <div className="font-semibold text-2xl">GoingChat</div>
+      <div className="font-semibold text-2xl">Farmers chat</div>
       <div className="w-1/2">
         <input
           type="text"
@@ -21,14 +21,19 @@ function ChatPage() {
         />
       </div>
       <div
-        className="h-12 w-12 p-2 bg-yellow-500 rounded-full text-white font-semibold flex items-center justify-center"
+        className="h-16 w-16 p-2 rounded-full text-white font-semibold flex items-center justify-center"
       >
-        RA
+            
+      <img
+        src="https://parrotprint.com/wp/wp-content/uploads/2017/04/pexels-photo-27411.jpg"
+        className="object-cover h-full w-full rounded-full"
+        alt=""
+      />
       </div>
     </div>
 
 
-    <div className="flex flex-row justify-between bg-white">
+    <div className="flex h-[90vh]   flex-row justify-between">
      
       <div className="flex flex-col w-2/5 border-r-2 overflow-y-auto">
         <UserContactComponent/>
@@ -36,14 +41,22 @@ function ChatPage() {
         <UserContactComponent/>
       </div>
   
-      <div className="w-full px-5 flex flex-col justify-between">
-        <div className="flex flex-col mt-5">
+      <div className=" lg:min-w-[900px] h-full px-5 flex flex-col justify-between">
+        <div className="flex flex-col mt-5 overflow-scroll">
+            <SenderText/>
+            <REceiuverText/>
+            <SenderText/>
+            <REceiuverText/>
+            <SenderText/>
+            <REceiuverText/>
+            <SenderText/>
+            <REceiuverText/>
             <SenderText/>
             <REceiuverText/>
             <SenderText/>
             <REceiuverText/>
         </div>
-        <div className="py-5">
+        <div className="py-5 sticky b-0 ">
           <input
             className="w-full bg-gray-300 py-5 px-3 rounded-xl"
             type="text"

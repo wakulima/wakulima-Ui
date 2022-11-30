@@ -9,7 +9,7 @@ function REceiuverText() {
       alt=""
     />
     <div
-      className="ml-2 py-3 px-4 bg-gray-400 rounded-br-3xl rounded-tr-3xl rounded-tl-xl text-white"
+      className="ml-2 py-3 px-4 bg-gray-400 w-[400px] rounded-br-3xl rounded-tr-3xl rounded-tl-xl text-white"
     >
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
       at praesentium, aut ullam delectus odio error sit rem. Architecto
