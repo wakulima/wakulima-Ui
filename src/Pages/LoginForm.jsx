@@ -14,16 +14,19 @@ function LoginForm() {
   });
 
   useEffect(() => {
-    if (auth.id) {
+    if (auth.loginStatus === "succes" ) {
       navigate("/");
     }
-  }, [auth.id, navigate]);
+  }, [auth.loginStatus, navigate]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log(user);
     dispatch(loginUser(user));
+    if (auth.loginStatus === "success" ) {
+        navigate("/");
+      }
   };
 
   return (
@@ -78,7 +81,7 @@ function LoginForm() {
                   </button>
                 </div>
                 <div className="relative">
-                {auth.loginStatus === "rejected" ? <p>{auth.loginError}</p> : null}
+                {auth.loginStatus === "rejected" ? "Invalid username or password" : null}
                 </div>
               </div>
             </div>

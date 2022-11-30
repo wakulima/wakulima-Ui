@@ -22,7 +22,7 @@ const initialState = {
 // full_name, :email, :phone_number, :location, :user_type, :verification_status, :password
 
 export const registerUser = createAsyncThunk(
-  "auth/registerUser",
+  "auth/register",
   async (values, { rejectWithValue }) => {
     try {
       const token = await axios.post(`${url}/register`, {
@@ -35,7 +35,7 @@ export const registerUser = createAsyncThunk(
         password: values.password,
       });
 
-      localStorage.setItem("token", token.data);
+      localStorage.setItem("token", token);
 
       // return token.data;
     } catch (error) {
@@ -46,7 +46,7 @@ export const registerUser = createAsyncThunk(
 );
 
 export const loginUser = createAsyncThunk(
-  "auth/loginUser",
+  "auth/login",
   async (values, { rejectWithValue }) => {
     try {
       const token = await axios.post(`${url}/login`, {
@@ -57,7 +57,7 @@ export const loginUser = createAsyncThunk(
       localStorage.setItem("token", token.data);
       return token.data;
     } catch (error) {
-      console.log(error.response);
+      console.log(error.response.data);
       return rejectWithValue(error.response.data);
     }
   }
@@ -87,7 +87,7 @@ const authSlice = createSlice({
       const token = state.token;
 
       if (token) {
-        const user = jwtDecode(token);
+        const user = (token);
         return {
           ...state,
           token,
@@ -122,14 +122,14 @@ const authSlice = createSlice({
     });
     builder.addCase(registerUser.fulfilled, (state, action) => {
       if (action.payload) {
-        const user = jwtDecode(action.payload);
+        const user = (action.payload);
         return {
           ...state,
           token: action.payload,
           name: user.name,
           email: user.email,
           id: user.id,
-          isAdmin: user.isAdmin,
+          // isAdmin: user.isAdmin,
           registerStatus: "success",
         };
       } else return state;
@@ -146,7 +146,7 @@ const authSlice = createSlice({
     });
     builder.addCase(loginUser.fulfilled, (state, action) => {
       if (action.payload) {
-        const user = jwtDecode(action.payload);
+        const user = (action.payload);
         return {
           ...state,
           token: action.payload,
@@ -173,7 +173,7 @@ const authSlice = createSlice({
     });
     builder.addCase(getUser.fulfilled, (state, action) => {
       if (action.payload) {
-        const user = jwtDecode(action.payload);
+        const user = (action.payload);
         return {
           ...state,
           token: action.payload,

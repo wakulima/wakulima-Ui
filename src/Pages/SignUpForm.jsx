@@ -30,7 +30,7 @@ function SignUpForm() {
 
     console.log(user);
     dispatch(registerUser(user));
-    if (user.email !=="" ) {
+    if (auth.registerStatus !== "rejected" ) {
         navigate("/login");
       }
   };
@@ -165,10 +165,14 @@ function SignUpForm() {
                   </div>
                   <div className="relative">
                     <button className="bg-blue-500 text-white rounded-md px-2 py-1">
-                    {/* {auth.registerStatus === "pending" ? "Submitting..." : "Register"} */}
-                    Register
+                    {auth.registerStatus === "pending" ? "Submitting..." : "Register"}
+                   
                     </button>
-                    
+                   
+                    <div className="relative">
+                {auth.registerStatus === "rejected" ? "Email has already been taken" : null}
+                </div>
+               
                   </div>
                   
                 </div>
