@@ -9,6 +9,7 @@ import NavBar from '../components/NavBar'
 function LandingPage() {
   return (
     <div>
+      {/* all sections */}
         
         <section id='home'>
             <HeroSection/>
