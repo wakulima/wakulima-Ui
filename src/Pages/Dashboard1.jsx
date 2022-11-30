@@ -1,13 +1,22 @@
 import clsx from "https://cdn.skypack.dev/clsx@1.1.1";
-const { useState } = React
-const { useSpring, animated, config} = ReactSpring;
-const { LineChart,
+import React,{useState} from "react";
+import { useSpring, animated, config } from '@react-spring/web'
+import { LineChart,
   Line,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  ResponsiveContainer, } = Recharts
+  ResponsiveContainer } from 'react-charts'
+
+// const { useSpring, animated, config} = ReactSpring;
+// const { LineChart,
+//   Line,
+//   XAxis,
+//   YAxis,
+//   CartesianGrid,
+//   Tooltip,
+//   ResponsiveContainer, } = Recharts
 
 const map = (value, sMin, sMax, dMin, dMax) => {
   return dMin + ((value - sMin) / (sMax - sMin)) * (dMax - dMin);
@@ -95,7 +104,7 @@ const graphData = [
   };
 });
 
-const App = () => {
+const DashboardApp = () => {
   const [showSidebar, onSetShowSidebar] = useState(false);
   return (
     <div className="flex">
@@ -981,3 +990,4 @@ function Image({ path = '1', className = 'w-4 h-4' }) {
     />
   );
 }
+export  default DashboardApp;
