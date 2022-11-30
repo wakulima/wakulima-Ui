@@ -3,10 +3,12 @@ import Community from '../components/Community'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import NavBar from '../components/NavBar'
-
+import { useDispatch, useSelector } from "react-redux"
 
 
 function LandingPage() {
+  const auth = useSelector((state) => state.auth);
+  console.log(auth)
   return (
     <div>
         

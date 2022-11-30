@@ -6,7 +6,7 @@ import App from './App';
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 
-import authReducer from "./slices/authSlice";
+import authReducer from './components/slices/Authslice';
 
 const store = configureStore({
   reducer: {
@@ -18,10 +18,9 @@ const store = configureStore({
   //   getDefaultMiddleware().concat(productsApi.middleware),
 });
 
-store.dispatch(productsFetch());
-store.dispatch(getTotals());
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
