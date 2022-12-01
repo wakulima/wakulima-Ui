@@ -3,7 +3,7 @@ import React from 'react'
 function NavBar() {
   return (
     <div className=' flex flex-row items-center justify-between  '>
-        <img className='w-32 rounded-md' src="https://images-platform.99static.com/CecykL6D7mS0R0gP8uCB22GJZmE=/326x49:1281x1004/500x500/top/smart/99designs-contests-attachments/123/123900/attachment_123900006" alt="" />
+        <img className='w-32 rounded-md' src="https://res.cloudinary.com/dfd8vbjzj/image/upload/v1669924395/attachment_123900006-removebg-preview_blyzqo.png" alt="" />
         
         <div>
             <ul className='li flex flex-row text-lg space-x-4'>
