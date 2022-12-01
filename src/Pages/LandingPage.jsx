@@ -11,6 +11,7 @@ function LandingPage() {
   console.log(auth)
   return (
     <div>
+      {/* all sections */}
         
         <section id='home'>
             <HeroSection/>
