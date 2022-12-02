@@ -5,6 +5,8 @@ import LandingPage from "./Pages/LandingPage";
 // import DashboardApp from './Pages/Dashboard1';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SignUpForm from "./Pages/SignUpForm";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 import Fam from '../src/components/farmdash/Fam'
 
 
@@ -18,6 +20,8 @@ function App() {
           <Route exact path="/" element={<LandingPage />}></Route>
           <Route exact path="/signup" element={<SignUpForm />}></Route>
           <Route exact path="/login" element={<LoginForm />}></Route>
+          <Route exact path="/about" element={<About/>}></Route>
+          <Route exact path="/contact" element={<Contact/>}></Route>
           <Route exact path="/farmer" element={<Fam />}></Route>
         </Routes>
       </Router>
