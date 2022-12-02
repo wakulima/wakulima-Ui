@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../components/slices/Authslice";
+import Select from 'react-select'
 
 function SignUpForm() {
   const dispatch = useDispatch();
@@ -35,26 +36,45 @@ function SignUpForm() {
       }
   };
 
+
+const options = [
+  { value: 'buyer', label: 'Buyer' ,},
+  { value: 'farmer', label: 'Farmer' },
+  { value: 'researcher', label: 'Researcher' }
+]
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-300 to-green-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
           <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
             <div className="max-w-md mx-auto">
               <div>
-                <h1 className="text-2xl font-semibold">Registrater Here! </h1>
+                <h1 className="text-2xl font-semibold">Register Here! </h1>
               </div>
+              
               <div className="divide-y divide-gray-200">
                 <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-                  <div className="relatve">
+                <div className="relative">
                     <input
+                      autoComplete="off"
+                      id="name"
+                      name="name"
                       type="text"
-                      placeholder="name"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      placeholder="Full name"
                       onChange={(e) =>
                         setUser({ ...user, full_name: e.target.value })
                       }
+                      required
                     />
+                    <label
+                      htmlFor="name"
+                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >
+                      Full Name
+                    </label>
                   </div>
 
                   <div className="relative">
@@ -68,6 +88,7 @@ function SignUpForm() {
                       onChange={(e) =>
                         setUser({ ...user, email: e.target.value })
                       }
+                      required
                     />
                     <label
                       htmlFor="email"
@@ -77,50 +98,89 @@ function SignUpForm() {
                     </label>
                   </div>
 
-                  <div className="relatve">
+                  <div className="relative">
                     <input
-                      type="number"
-                      placeholder="phone_number"
+                      autoComplete="off"
+                      id="phone"
+                      name="phone"
+                      type="text"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      placeholder="Phone number"
                       onChange={(e) =>
                         setUser({ ...user, phone_number: e.target.value })
                       }
+                      required
                     />
+                    <label
+                      htmlFor="phone"
+                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >
+                      Phone Number
+                    </label>
                   </div>
 
-                  <div className="relatve">
+                  <div className="relative">
                     <input
+                      autoComplete="off"
+                      id="location"
+                      name="location"
                       type="text"
-                      placeholder="location"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      placeholder="Location"
                       onChange={(e) =>
                         setUser({ ...user, location: e.target.value })
                       }
+                      required
                     />
+                    <label
+                      htmlFor="location"
+                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >
+                      Location
+                    </label>
                   </div>
 
-                  <div className="relatve">
-                    <input
-                      type="text"
-                      placeholder="user_type"
-                      onChange={(e) =>
-                        setUser({ ...user, user_type: e.target.value })
-                      }
-                    />
-                  </div>
-
-                  <div className="relatve">
-                    <input
-                    id = 'verification_status'
+                  <div className="relative">
+                    <Select
+                      autoComplete="off"
+                      id="usertype"
+                      name="usertype"
                       type="text"
                       className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
-                      placeholder="verification_status"
+                      placeholder="User type"                   
+                      options={options} 
+                      onSubmit={(e) =>
+                        setUser({ ...user, user_type: e.target.value })
+                      }
+                      required
+                    />
+                    
+                    {/* <label
+                      htmlFor="usertype"
+                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >
+                      User Type
+                    </label> */}
+                  </div>
 
+                  <div className="relative">
+                    <input
+                      autoComplete="off"
+                      id="status"
+                      name="status"
+                      type="text"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      placeholder="Verification status"
                       onChange={(e) =>
-                        setUser({
-                          ...user,
-                          verification_status: e.target.value,
-                        })
+                        setUser({ ...user, verification_status: e.target.value })
                       }
                     />
+                    <label
+                      htmlFor="status"
+                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >
+                      Verification status
+                    </label>
                   </div>
 
                   <div className="relative">
@@ -134,6 +194,7 @@ function SignUpForm() {
                       onChange={(e) =>
                         setUser({ ...user, password: e.target.value })
                       }
+                      required
                     />
                     <label
                       htmlFor="password"
@@ -146,7 +207,7 @@ function SignUpForm() {
                   <div className="relative">
                     <input
                       autoComplete="off"
-                      id="password"
+                      id="password_confirmation"
                       name="password_confirmation"
                       type="password"
                       className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
@@ -154,17 +215,18 @@ function SignUpForm() {
                       onChange={(e) =>
                         setUser({ ...user, password_confirmation: e.target.value })
                       }
+                      required
                     />
 
                     <label
-                      htmlFor="password"
+                      htmlFor="password_confirmation"
                       className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
                     >
-                      Password
+                      Password Confirmation
                     </label>
                   </div>
                   <div className="relative">
-                    <button className="bg-blue-500 text-white rounded-md px-2 py-1">
+                    <button className="bg-green-500 text-white rounded-md px-2 py-1">
                     {auth.registerStatus === "pending" ? "Submitting..." : "Register"}
                    
                     </button>
