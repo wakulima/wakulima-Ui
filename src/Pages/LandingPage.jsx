@@ -57,13 +57,11 @@ function LandingPage() {
             <HeroSection/>
         </section>
         <section id='services '>
-            <div className='space-y-24 mx-8'>
-            <div className='flex flex-row justify-center md:space-x-28 '>
-                <HeroTitles number={'250'} word={'Our Happy Customer'}/>
-                <HeroTitles  number={'100'} word={'Best Service Provided'}/>
-                <HeroTitles  number={'570'} word={'Product Portfolio Results'}/>
-                <HeroTitles  number={'300'} word={'Our Business Partner'}/>
-            </div>
+            <div className='space-y-24 mx-8 pt-16'>
+                <div className='flex flex-col items-center space-y-10'>
+                    <h1 className='text-6xl'>Our General Company</h1>
+                    
+                </div>
  
             <div className='pt-20'>
                 <div className='flex flex-row space-x-16  justify-center pt-10'>
@@ -108,7 +106,20 @@ function LandingPage() {
                 </div>
                 
             </div>
-
+            
+            <div className='space-x-16 w-fit m-auto space-y-12 pt-32'>
+                <h1 className=' text-[#4DB852] text-2xl underline font-bold tracking-wide'>Last 6 months Actions</h1>
+                
+                <p className="text-black max-w-[900px] text-lg tracking-wide ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                            illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                            illo tenetur fuga ducimus numquam ea!
+                    </p>
+                    <div className='flex flex-row justify-center md:space-x-28 '>
+                        <HeroTitles number={'250'} word={'Our Happy Customer'}/>
+                        <HeroTitles  number={'100'} word={'Best Service Provided'}/>
+                        <HeroTitles  number={'570'} word={'Product Portfolio Results'}/>
+                        <HeroTitles  number={'300'} word={'Our Business Partner'}/>
+                    </div></div>
             </div>
         </section>
         <section className='pt-20'>

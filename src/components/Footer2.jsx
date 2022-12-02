@@ -4,7 +4,7 @@ function Footer2() {
   return (
     <div>
         <div className='flex flex-row '>
-            <div className=' space-y-10 items-center flex flex-col  pt-32 bg-[#31512A] p-4 itesm-center h-[600px] w-[500px] text-white'>
+            <div className=' space-y-10 items-center flex flex-col  pt-32 bg-[#31512A] p-4 itesm-center h-[700px] w-[600px] text-white'>
                 <h1 className='tracking-wide text-2xl'>About Us</h1>
                 <p className='text-white/50 max-w-[600px] text-lg'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam error nihil, dolorem explicabo accusamus est! Eius soluta exercitationem corporis ratione perspiciatis laborum! Totam, velit enim illum voluptatum iure sunt!
