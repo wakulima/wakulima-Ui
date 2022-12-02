@@ -6,6 +6,7 @@ import LandingPage from "./Pages/LandingPage";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SignUpForm from "./Pages/SignUpForm";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/signup" element={<SignUpForm />}></Route>
           <Route exact path="/login" element={<LoginForm />}></Route>
           <Route exact path="/about" element={<About/>}></Route>
+          <Route exact path="/contact" element={<Contact/>}></Route>
         </Routes>
       </Router>
 
