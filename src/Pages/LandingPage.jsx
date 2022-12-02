@@ -8,6 +8,7 @@ import Cards from '../components/Cards'
 import HeroTitles from '../components/HeroTitles'
 import FeatureCard from '../components/FeatureCard'
 import Farm from '../components/farm/Farm'
+import { Link } from "react-router-dom";
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
@@ -72,7 +73,10 @@ function LandingPage() {
                         <p className='text-black/50 max-w-[600px] text-lg'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam error nihil, dolorem explicabo accusamus est! Eius soluta exercitationem corporis ratione perspiciatis laborum! Totam, velit enim illum voluptatum iure sunt!
                         </p>
-                        <button className=' bg-[#4DB852] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</button>
+                        <button className=' bg-[#4DB852] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>
+                            <Link to='/signup'>Discover More</Link>
+                            
+                        </button>
                     </div>
                     <div>
                         <div className='w-[600px] h-[600px] bg-[#4DB852] p-6'>

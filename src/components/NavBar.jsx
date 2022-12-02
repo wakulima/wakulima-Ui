@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -7,7 +8,11 @@ function NavBar() {
         
         <div>
             <ul className='li flex flex-row text-lg space-x-4'>
-                <li>Home</li>
+                <li>
+                  <Link to='/'>
+                     Home
+                  </Link>
+                  </li>
                 <li>Services</li>
                 <li>Features</li>
                 <li>Abouts Us</li>

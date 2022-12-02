@@ -18,8 +18,14 @@ function HeroSection() {
             illo tenetur fuga ducimus numquam ea!</p>
 
             <div className="flex flex-row space-x-8 justify-center ">
-            <button className=' bg-[#4DB852] text-white tracking-wide  py-4 px-16 text-md uppercase rounded-3xl'>Discover More</button>
-            <button className=' bg-[white] text-[#4DB852] tracking-wide py-4 px-16 text-md uppercase rounded-3xl'>Discover More</button>
+            <Link to='/signup'>
+             <button className=' bg-[#4DB852] text-white tracking-wide  py-4 px-16 text-md uppercase rounded-3xl'>Discover More</button>
+            </Link>
+           
+           <Link to='login'>
+             <button className=' bg-[white] text-[#4DB852] tracking-wide py-4 px-16 text-md uppercase rounded-3xl'>Login</button>
+           </Link>
+           
             </div>
         </div>
         {/* <div className="max-w-xl text-center sm:text-left">

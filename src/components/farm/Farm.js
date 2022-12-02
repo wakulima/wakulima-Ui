@@ -5,18 +5,6 @@ export default function Farm() {
   return (
     <div className="farm">
       <div class="farm_image">
-        {/* <iframe
-          class="elementor-background-video-embed"
-          allowfullscreen="1"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          title="footage sayuran hidroponik free bebas copyright bebas hak cipta"
-          src="https://www.youtube.com/embed/WThJciyM6tk?controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fkitnew.moxcreative.com&amp;widgetid=1"
-          id="widget2"
-          style={{width: "1292px", height: "726.75px"}}
-          width="640"
-          height="360"
-          frameborder="0"
-        ></iframe> */}
         <img style={{width: "100%", height: "530px"}} src="https://images.unsplash.com/photo-1601113430990-b1859844b139?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3MDA1NDZ8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="farm"/>
       </div>
       <div class="elementor-background-overlay"></div>
