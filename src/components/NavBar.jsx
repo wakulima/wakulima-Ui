@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 function NavBar() {
   return (
-    <div className=' flex flex-row items-center justify-between  '>
+    <div className=' flex flex-row items-center justify-between font-Roboto  '>
         <img className='w-28 rounded-md' src="https://res.cloudinary.com/dfd8vbjzj/image/upload/v1669924395/attachment_123900006-removebg-preview_blyzqo.png" alt="" />
         
         <div>

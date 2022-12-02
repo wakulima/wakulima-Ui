@@ -50,7 +50,7 @@ function LandingPage() {
     
 // ]
   return (
-    <div className='space-y-14'>
+    <div className='space-y-14 all'>
       {/* all sections */}
         
         <section id='home'>

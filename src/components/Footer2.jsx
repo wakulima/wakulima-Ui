@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer2() {
   return (
-    <div>
+    <div className='font-Roboto'>
         <div className='flex flex-row '>
             <div className=' space-y-10 items-center flex flex-col  pt-32 bg-[#31512A] p-4 itesm-center h-[700px] w-[600px] text-white'>
                 <h1 className='tracking-wide text-2xl'>About Us</h1>
