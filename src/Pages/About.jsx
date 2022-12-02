@@ -12,8 +12,8 @@ function About() {
         </div>
         <div className='px-32 py-32'>
             <div className='flex flex-row'>
-            <div className='min-w-[800px]'>
-                <h1 className=' text-[#4DB852] font-bold tracking-wide font-Prata'>About our Company</h1>
+            <div className='min-w-[800px] space-y-2'>
+                <h1 className=' text-[#4DB852] font-bold tracking-wider font-graces'>About our Company</h1>
                 <h1 className='text-5xl font-Prata font-bold'>Our Company</h1>
             </div>
             <div className='space-y-4'>
