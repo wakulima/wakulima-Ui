@@ -8,6 +8,7 @@ import Cards from '../components/Cards'
 import HeroTitles from '../components/HeroTitles'
 import FeatureCard from '../components/FeatureCard'
 import Farm from '../components/farm/Farm'
+import Footer2 from '../components/Footer2'
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
@@ -114,7 +115,8 @@ function LandingPage() {
             <Farm/>
         </section>
      
-        <Footer/>
+        {/* <Footer/> */}
+        <Footer2/>
 
       
     </div>
