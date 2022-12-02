@@ -9,6 +9,7 @@ import HeroTitles from '../components/HeroTitles'
 import FeatureCard from '../components/FeatureCard'
 import Farm from '../components/farm/Farm'
 import Footer2 from '../components/Footer2'
+import ServicesSection from '../components/ServicesSection'
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
@@ -56,8 +57,8 @@ function LandingPage() {
             <NavBar />
             <HeroSection/>
         </section>
-        <section id='services '>
-            <div className='space-y-24 mx-8 pt-16'>
+        <section id='OUr company '>
+            <div className='space-y-24 mx-8 py-16'>
                 <div className='flex flex-col items-center space-y-10'>
                     <h1 className='text-6xl'>Our General Company</h1>
                     
@@ -80,39 +81,16 @@ function LandingPage() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-row justify-center space-x-16 pt-32'>
-                    <div className='text-center w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
-                        <div className='    w-[80px] h-[80px]  bg-[#4DB852] rounded-full'></div>
-                        <h1 className='text-2xl font-bold text-[#4DB852]'>Ai enabled Supply chain</h1>
-                        <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-                    </div>
-
-
-                    <div className='p-8 text-center space-y-4 w-[400px] h-[400px] bg-[#4DB852] bg-gradient-to-r  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center '>
-                    <div className='    w-[80px] h-[80px]  bg-[white] rounded-full '></div>
-                    <h1 className='text-2xl font-bold text-[white]'>Market Analysis</h1>
-                        <p className='text-lg text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-
-                    </div>
-
-
-                    <div className=' text-center w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
-                        <div className='    w-[80px] h-[80px]  bg-[#4DB852] rounded-full'></div>
-                        <h1 className='text-2xl font-bold text-[#4DB852]'>Farmer Connection</h1>
-                        <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-
-                    </div>
-                </div>
                 
             </div>
             
             <div className='space-x-16 w-fit m-auto space-y-12 pt-32'>
                 <h1 className=' text-[#4DB852] text-2xl underline font-bold tracking-wide'>Last 6 months Actions</h1>
                 
-                <p className="text-black max-w-[900px] text-lg tracking-wide ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-                            illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-                            illo tenetur fuga ducimus numquam ea!
+                <p className=" text-black max-w-[900px] text-lg tracking-wide ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                illo tenetur fuga ducimus numquam ea!
                     </p>
                     <div className='flex flex-row justify-center md:space-x-28 '>
                         <HeroTitles number={'250'} word={'Our Happy Customer'}/>
@@ -122,7 +100,10 @@ function LandingPage() {
                     </div></div>
             </div>
         </section>
-        <section className='pt-20'>
+        <section className='bg-[#F0EFEB] py-32'>
+            <ServicesSection/>
+        </section>
+        <section className='py-20'>
             <Farm/>
         </section>
      

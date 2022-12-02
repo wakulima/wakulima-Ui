@@ -19,7 +19,7 @@ function HeroSection() {
 
             <div className="flex flex-row space-x-8 justify-center ">
             <Link to='/signup'>
-             <button className=' bg-[#4DB852] text-white tracking-wide  py-4 px-16 text-md uppercase hover:bg-[#A8CF45] rounded-3xl'>Discover More</button>
+             <button className='hover:animate-pulse bg-[#4DB852] text-white tracking-wide  py-4 px-16 text-md uppercase hover:bg-[#A8CF45] rounded-3xl'>Discover More</button>
             </Link>
            
            <Link to='login'>
