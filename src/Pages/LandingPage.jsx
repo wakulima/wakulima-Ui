@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux"
 import Cards from '../components/Cards'
 import HeroTitles from '../components/HeroTitles'
 import FeatureCard from '../components/FeatureCard'
+import Farm from '../components/farm/Farm'
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
@@ -108,6 +109,9 @@ function LandingPage() {
             </div>
 
             </div>
+        </section>
+        <section className='pt-20'>
+            <Farm/>
         </section>
      
         <Footer/>

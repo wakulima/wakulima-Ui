@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 function NavBar() {
   return (
     <div className=' flex flex-row items-center justify-between  '>
@@ -7,7 +7,9 @@ function NavBar() {
         
         <div>
             <ul className='li flex flex-row text-2xl space-x-8'>
-                <li>Home</li>
+                <li><Link to='/'>
+                     Home
+                  </Link></li>
                 <li>Services</li>
                 <li>Features</li>
                 <li>Abouts Us</li>
