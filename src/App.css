@@ -19,7 +19,7 @@
         @apply outline-none md:px-3 text-lg lg:text-xl cursor-pointer text-white/30 hover:text-white font-medium
     } 
     .li>li{
-      @apply outline-none md:mx-4 text-lg lg:text-2xl cursor-pointer text-black/80 hover:text-black/80 font-medium w-fit 
+      @apply outline-none md:mx-4 text-lg hover:text-[#4DB852] lg:text-2xl cursor-pointer text-black/80 font-medium w-fit 
   } 
   .li>caption{
     @apply font-bold text-black text-center

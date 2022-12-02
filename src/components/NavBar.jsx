@@ -3,10 +3,10 @@ import React from 'react'
 function NavBar() {
   return (
     <div className=' flex flex-row items-center justify-between  '>
-        <img className='w-32 rounded-md' src="https://res.cloudinary.com/dfd8vbjzj/image/upload/v1669924395/attachment_123900006-removebg-preview_blyzqo.png" alt="" />
+        <img className='w-28 rounded-md' src="https://res.cloudinary.com/dfd8vbjzj/image/upload/v1669924395/attachment_123900006-removebg-preview_blyzqo.png" alt="" />
         
         <div>
-            <ul className='li flex flex-row text-lg space-x-4'>
+            <ul className='li flex flex-row text-2xl space-x-8'>
                 <li>Home</li>
                 <li>Services</li>
                 <li>Features</li>
