@@ -9,7 +9,9 @@ module.exports = {
       
     },
     fontFamily:{
-      'graces': ['Covered By Your Grace']
+      'graces': ['Covered By Your Grace'],
+      'Prata': ['Prata','serif'],
+
     }
   },
   plugins: [],

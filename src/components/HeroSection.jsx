@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function HeroSection() {
   return (
     <section className="relative bg-[url(https://www.brookings.edu/wp-content/uploads/2022/06/2015-05-13T120000Z_1913900413_GF10000093469_RTRMADP_3_AFRICA-CROPS.jpg)] bg-cover bg-center bg-no-repeat ">
-      <div className="sticky float z-40">
+      <div className="">
         
       </div>
       <div className="absolute inset-0 bg-black/40 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/70 sm:to-white/25"></div>

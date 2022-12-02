@@ -10,6 +10,7 @@ import FeatureCard from '../components/FeatureCard'
 import Farm from '../components/farm/Farm'
 import Footer2 from '../components/Footer2'
 import ServicesSection from '../components/ServicesSection'
+import { Link } from 'react-router-dom'
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
@@ -50,17 +51,18 @@ function LandingPage() {
     
 // ]
   return (
-    <div className='space-y-14 all'>
+    <div className=' all'>
       {/* all sections */}
+      <NavBar />
         
         <section id='home'>
-            <NavBar />
+            
             <HeroSection/>
         </section>
         <section id='OUr company '>
             <div className='space-y-24 mx-8 py-16'>
                 <div className='flex flex-col items-center space-y-10'>
-                    <h1 className='text-6xl'>Our General Company</h1>
+                    <h1 className='text-6xl font-Prata text-[#005364]'>Our General Company</h1>
                     
                 </div>
  
@@ -72,7 +74,9 @@ function LandingPage() {
                         <p className='text-black/50 max-w-[600px] text-lg'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam error nihil, dolorem explicabo accusamus est! Eius soluta exercitationem corporis ratione perspiciatis laborum! Totam, velit enim illum voluptatum iure sunt!
                         </p>
-                        <button className=' bg-[#4DB852] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</button>
+                        <div>
+                        <Link to={'/about'}>
+                        <button className=' bg-[#4DB852] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</button></Link></div>
                     </div>
                     <div>
                         <div className='w-[600px] h-[600px] bg-[#4DB852] p-6'>

@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 function NavBar() {
   return (
-    <div className=' flex flex-row items-center justify-between font-Roboto  '>
+    <div className='sticky top-0 z-40 shadow-lg flex flex-row items-center justify-between font-Roboto  bg-white'>
         <img className='w-28 rounded-md' src="https://res.cloudinary.com/dfd8vbjzj/image/upload/v1669924395/attachment_123900006-removebg-preview_blyzqo.png" alt="" />
         
         <div>
@@ -12,7 +12,9 @@ function NavBar() {
                   </Link></li>
                 <li>Services</li>
                 <li>Features</li>
-                <li>Abouts Us</li>
+                <li><Link to='/about'>
+                     About US
+                  </Link></li>
                 <li>Contact</li>
             </ul>
         </div>

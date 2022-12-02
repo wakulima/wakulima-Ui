@@ -4,7 +4,7 @@ function ServicesSection() {
   return (
     <div>
         <div className='flex flex-col items-center space-y-10'>
-            <h1 className='text-6xl'>Featured Services</h1>
+            <h1 className='text-6xl font-Prata text-[#005364]'>Featured Services</h1>
             <div>
             <div className='flex flex-row justify-center space-x-16 pt-32'>
                     <div className='text-center w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
