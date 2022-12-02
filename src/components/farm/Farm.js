@@ -3,68 +3,15 @@ import '../farm/farm.css'
 
 export default function Farm() {
   return (
-    <div className="farm">
-      <div class="farm_image">
-        <img style={{width: "100%", height: "530px"}} src="https://images.unsplash.com/photo-1601113430990-b1859844b139?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3MDA1NDZ8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="farm"/>
-      </div>
-      <div class="elementor-background-overlay"></div>
-      <div class="elementor-container elementor-column-gap-default">
-        <div
-          class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ffb39c6 animated fadeInUp"
-          data-id="ffb39c6"
-          data-element_type="column"
-          data-settings='{"animation":"fadeInUp"}'
-        >
-          <div class="elementor-widget-wrap elementor-element-populated">
-            <div
-              class="elementor-element elementor-element-de7a431 elementor-widget elementor-widget-heading"
-              data-id="de7a431"
-              data-element_type="widget"
-              data-widget_type="heading.default"
-            >
-              <div class="title">
-                <h2 class="farm_title">
-                  Feeding the globe and looking after the environment.
-                </h2>
-              </div>
-            </div>
-            <div
-              class="elementor-element elementor-element-5751fce elementor-widget elementor-widget-text-editor"
-              data-id="5751fce"
-              data-element_type="widget"
-              data-widget_type="text-editor.default"
-            >
-              <div class="elementor-widget-container">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
-                </p>{" "}
-              </div>
-            </div>
-            <div
-              class="elementor-element elementor-element-ad724c4 elementor-align-center elementor-widget elementor-widget-button"
-              data-id="ad724c4"
-              data-element_type="widget"
-              data-widget_type="button.default"
-            >
-              <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                  <a
-                    href="#"
-                    class="elementor-button-link elementor-button elementor-size-md"
-                    role="button"
-                  >
-                    <span class="elementor-button-content-wrapper">
-                      <span class="elementor-button-text">Discover more</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="text-center items-center object-cover h-[600px] bg-[url(https://www.brookings.edu/wp-content/uploads/2022/06/2015-05-13T120000Z_1913900413_GF10000093469_RTRMADP_3_AFRICA-CROPS.jpg)] bg-no-repeat flex flex-row align-center justify-center ">
+     <div>
+     <h2 className='family-Poppins text-white font-extrabold text-4xl max-w-[600px] '>We Ensure green environment and Food security across the region</h2>
+     <p className="text-white max-w-[900px] text-lg tracking-wide text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            illo tenetur fuga ducimus numquam ea!</p>
+
+     </div>
+      
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../components/slices/Authslice";
-import Select from 'react-select'
+// import Select from 'react-select'
 import NavBar from "../components/NavBar";
 
 function SignUpForm() {
@@ -146,7 +146,7 @@ const options = [
                   </div>
 
                   <div className="relative">
-                    <Select
+                    <select
                       autoComplete="off"
                       id="usertype"
                       name="usertype"

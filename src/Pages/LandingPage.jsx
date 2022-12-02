@@ -86,7 +86,7 @@ function LandingPage() {
                     </div>
                 </div>
                 <div className='flex flex-row justify-center space-x-16 pt-32'>
-                    <div className='w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
+                    <div className='text-center w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
                         <div className='    w-[80px] h-[80px]  bg-[#4DB852] rounded-full'></div>
                         <h1 className='text-2xl font-bold text-[#4DB852]'>Ai enabled Supply chain</h1>
                         <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
@@ -94,7 +94,7 @@ function LandingPage() {
                     </div>
 
 
-                    <div className='p-8 space-y-4 w-[400px] h-[400px] bg-[#4DB852] bg-gradient-to-r  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center '>
+                    <div className='p-8 text-center space-y-4 w-[400px] h-[400px] bg-[#4DB852] bg-gradient-to-r  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center '>
                     <div className='    w-[80px] h-[80px]  bg-[white] rounded-full '></div>
                     <h1 className='text-2xl font-bold text-[white]'>Market Analysis</h1>
                         <p className='text-lg text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
@@ -102,7 +102,7 @@ function LandingPage() {
                     </div>
 
 
-                    <div className='w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
+                    <div className=' text-center w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
                         <div className='    w-[80px] h-[80px]  bg-[#4DB852] rounded-full'></div>
                         <h1 className='text-2xl font-bold text-[#4DB852]'>Farmer Connection</h1>
                         <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
@@ -114,7 +114,7 @@ function LandingPage() {
 
             </div>
         </section>
-        <section>
+        <section className='pt-20'>
             <Farm/>
         </section>
      
