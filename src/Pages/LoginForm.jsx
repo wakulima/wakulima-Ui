@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../components/slices/Authslice";
 import { useNavigate } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -30,6 +31,10 @@ function LoginForm() {
   };
 
   return (
+    <div>
+      <header>
+        <NavBar/>
+      </header>
     <form onSubmit={handleSubmit}>
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -90,6 +95,7 @@ function LoginForm() {
       </div>
     </div>
     </form>
+    </div>
   );
 }
 

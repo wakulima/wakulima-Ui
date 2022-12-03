@@ -4,14 +4,30 @@ import {Link} from 'react-router-dom';
 
 function HeroSection() {
   return (
-    <section className="relative bg-[url(https://www.brookings.edu/wp-content/uploads/2022/06/2015-05-13T120000Z_1913900413_GF10000093469_RTRMADP_3_AFRICA-CROPS.jpg)] bg-cover bg-center bg-no-repeat">
-      <div className="sticky float z-40">
-        <NavBar />
+    <section className="relative bg-[url(https://www.brookings.edu/wp-content/uploads/2022/06/2015-05-13T120000Z_1913900413_GF10000093469_RTRMADP_3_AFRICA-CROPS.jpg)] bg-cover bg-center bg-no-repeat ">
+      <div className="">
+        
       </div>
-      <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/50 sm:to-white/25"></div>
+      <div className="absolute inset-0 bg-black/40 sm:bg-transparent sm:bg-gradient-to-r sm:from-black/70 sm:to-white/25"></div>
 
-      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-        <div className="max-w-xl text-center sm:text-left">
+      <div className="relative mx-auto w-screen px-4 py-32  h-screen justify-center    flex flex-row ">
+        <div className="aloign-center space-y-14">
+        <h1 className="text-white text-6xl font-bold max-w-[900px] text-center">Green world & Food Security Solutions</h1>
+        <p className="text-white max-w-[900px] text-lg tracking-wide text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            illo tenetur fuga ducimus numquam ea!</p>
+
+            <div className="flex flex-row space-x-8 justify-center ">
+            <Link to='/signup'>
+             <button className='hover:animate-pulse min-w-[250px] bg-[#4DB852] text-white tracking-wide  py-4 px-16 text-md uppercase hover:bg-[#A8CF45] rounded-3xl'>Discover More</button>
+            </Link>
+           
+           <Link to='login'>
+             <button className='min-w-[250px] bg-[white] text-[#4DB852] tracking-wide py-4 px-16 text-md uppercase rounded-3xl'>Login</button>
+           </Link>
+            </div>
+        </div>
+        {/* <div className="max-w-xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             Let us find your Next
             <strong className="block font-extrabold text-rose-700">
@@ -39,7 +55,7 @@ function HeroSection() {
               Learn More{" "}
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

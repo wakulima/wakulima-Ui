@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../components/slices/Authslice";
-import Select from 'react-select'
+// import Select from 'react-select'
+import NavBar from "../components/NavBar";
 
 function SignUpForm() {
   const dispatch = useDispatch();
@@ -44,6 +45,10 @@ const options = [
 ]
 
   return (
+    <div>
+      <header>
+        <NavBar/>
+      </header>
     <form onSubmit={handleSubmit}>
       <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -141,7 +146,7 @@ const options = [
                   </div>
 
                   <div className="relative">
-                    <Select
+                    <select
                       autoComplete="off"
                       id="usertype"
                       name="usertype"
@@ -245,6 +250,7 @@ const options = [
       </div>
      
     </form>
+    </div>
   );
 }
 
