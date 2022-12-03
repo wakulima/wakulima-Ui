@@ -8,7 +8,7 @@ function Profile() {
     return (
         <Section>
             <div className="image">
-                <img src={img} alt="" />
+                <img src={'https://i.natgeofe.com/n/17fe550f-c244-47cf-9be3-f875d2d829e3/pepsico-woman-plants-rice-in-paddies_3x2.jpg'} alt="" />
             </div>
             <div className="title">
                 <h2>Wara Farm</h2>
@@ -20,7 +20,7 @@ function Profile() {
                     <h3>25</h3>
                 </div>
                 <div className="container">
-                    <h5>Rides</h5>
+                    <h5>Orders</h5>
                     <h3>427</h3>
                 </div>
                 <div className="container">
@@ -58,7 +58,7 @@ const Section = styled.section`
     .title {
         text-align: center;
         h2, h5 {
-            color: #ffc107;
+            color: #4DB852;
             font-family: 'Permanent Marker', cursive;
             letter-spacing: 0.3rem;
         }

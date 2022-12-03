@@ -10,7 +10,7 @@ import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 import scrollreveal from "scrollreveal";
-
+import {Link} from 'react-router-dom'
 function SideBar() {
   const [currentLink, setCurrentLink] = useState(1);
   const [navbarState, setNavbarState] = useState(false);
@@ -49,7 +49,7 @@ function SideBar() {
         <div className="top">
           <div className="brand">
             <FaTaxi />
-            <span>MY TAXI</span>
+            <span>WARA FARM</span>
           </div>
           <div className="toggle">
             {navbarState ? (
@@ -80,7 +80,7 @@ function SideBar() {
               >
                 <a href="/">
                   <RiDashboard2Fill />
-                  <span> Riders</span>
+                  <span> Market Prices</span>
                 </a>
               </li>
               <li
@@ -220,12 +220,12 @@ const Section = styled.section`
       align-items: center;
       gap: 2rem;
       svg {
-        color: #ffc107;
+        color: white;
         font-size: 2rem;
       }
       span {
         font-size: 2rem;
-        color: #ffc107;
+        color: white;
         font-family: "Permanent Marker", cursive;
       }
     }
@@ -241,9 +241,9 @@ const Section = styled.section`
           padding: 0.6rem 1rem;
           border-radius: 0.6rem;
           &:hover {
-            background-color: #ffc107;
+            background-color: #4DB852;
             a {
-              color: black;
+              color: white;
             }
           }
           a {
@@ -254,7 +254,7 @@ const Section = styled.section`
           }
         }
         .active {
-          background-color: #ffc107;
+          background-color: #4DB852;
           a {
             color: black;
           }

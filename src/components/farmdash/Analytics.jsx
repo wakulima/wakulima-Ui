@@ -63,8 +63,8 @@ const Section = styled.section`
     gap: 1rem;
     transition: 0ms.5s ease-in-out;
     &:hover {
-      background-color: #ffc107;
-      color: black;
+      background-color: #4DB852;
+      color: white;
       svg {
         color: white;
       }

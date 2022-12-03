@@ -6,9 +6,10 @@ import './farmer.css'
 
 function App() {
   return (
-    <Div>
+    <Div >
       <SideBar/>
       <Dashboard />
+
     </Div>
   )
 }

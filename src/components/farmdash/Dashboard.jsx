@@ -31,7 +31,7 @@ function Dashboard() {
   }, []);
 
   return (
-    <Section>
+    <Section className="">
       <NavBar />
       <div className="grid">
         <div className="row__one">
@@ -53,6 +53,7 @@ const Section = styled.section`
   padding: 2rem;
   height: 100%;
   .grid {
+    
     display: flex;
     flex-direction: column;
     height: 100%;

@@ -80,7 +80,7 @@ function LandingPage() {
                         </p>
                         <div >
                         <Link to={'/about'}>
-                        <motion.button className=' bg-[#4DB852] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</motion.button></Link></div>
+                        <motion.button className=' bg-[#90f795] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</motion.button></Link></div>
                     </div>
                     <div>
                         <div className='w-[600px] h-[600px] bg-[#4DB852] p-6'>

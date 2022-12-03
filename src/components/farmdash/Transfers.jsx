@@ -68,7 +68,7 @@ const Section = styled.section`
     gap: 1rem;
     .title {
         h2 {
-            color: #ffc107;
+            color: #4DB852;
             font-family: 'Permanent Marker', cursive;
             letter-spacing: 0.3rem;
         }
@@ -93,11 +93,12 @@ const Section = styled.section`
                 }
             }
             &__amount {
-                background-color: #d7e41e1d;
+                background-color: #4DB852;
                 padding: 0.2rem 0.5rem;
                 width: 4rem;
                 border-radius: 1rem;
                 text-align: center;
+                color: white;
                 transition: 0.3s ease-in-out;
                 &:hover {
                     background-color: #ffc107;
@@ -107,7 +108,7 @@ const Section = styled.section`
                     }
                 }
                 span {
-                    color: #ffc107;
+                    color: white;
                 }
             }
         }
@@ -122,7 +123,7 @@ const Section = styled.section`
         font-weight: bold;
         margin-top: 1rem;
         gap: 0.5rem;
-        color: #ffc107;
+        color: #4DB852;
         svg {
             font-size: 1.4rem;
             transition: 0.3s ease-in-out;

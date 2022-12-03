@@ -7,9 +7,9 @@ function NavBar() {
   return (
     <Nav>
       <div className="title">
-        <h4>Hi Mogaka,</h4>
+        <h4>Hi Kim,</h4>
         <h1>
-          Welcome to <span>my taxi dashboard</span>
+          Welcome to <span>MY Wara dashboard</span>
         </h1>
       </div>
       <div className="search">
@@ -27,10 +27,15 @@ const Nav = styled.nav`
 
   .title {
     font-size: 16px;
+    h4{
+      color: black;
+      font-weight: bold;
+    }
     h1 {
+      color: black;
       span {
         margin-left: 0.5rem;
-        color: #ffc107;
+        color: #4DB852;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         font-family: "Permanent Marker", cursive;

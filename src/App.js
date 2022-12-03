@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SignUpForm from "./Pages/SignUpForm";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Fam from '../src/components/farmdash/Fam'
+import Fam from './components/farmdash/Fam'
 
 
 
