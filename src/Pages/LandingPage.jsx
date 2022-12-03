@@ -51,7 +51,7 @@ function LandingPage() {
     
 // ]
   return (
-    <div className=' all'>
+    <div className=' '>
       {/* all sections */}
       <NavBar />
         
@@ -59,7 +59,7 @@ function LandingPage() {
             
             <HeroSection/>
         </section>
-        <section id='OUr company '>
+        <section id='OUr company all ' className='all'>
             <div className='space-y-24 mx-8 py-16'>
                 <div className='flex flex-col items-center space-y-10'>
                     <h1 className='text-6xl font-Prata text-[#005364]'>Our General Company</h1>
@@ -104,10 +104,10 @@ function LandingPage() {
                     </div></div>
             </div>
         </section>
-        <section className='bg-[#F0EFEB] py-32'>
+        <section className='bg-[#F0EFEB] py-32 all'>
             <ServicesSection/>
         </section>
-        <section className='py-20'>
+        <section className='py-20 all'>
             <Farm/>
         </section>
      
