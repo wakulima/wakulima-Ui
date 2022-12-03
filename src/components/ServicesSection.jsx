@@ -1,6 +1,8 @@
 import React from 'react'
 import * as Md from "react-icons/md";
 import * as Fa from "react-icons/fa";
+
+
 function ServicesSection() {
   return (
     <div>
@@ -9,7 +11,7 @@ function ServicesSection() {
             <div>
             <div className='flex flex-row justify-center space-x-16 pt-32'>
 
-  <div className='text-center w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
+                    <div className='text-center w-[400px] h-[400px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
                         <div className='    w-[80px] h-[80px]  bg-[#4DB852] rounded-full items-center flex flex-col justify-center'>
                             <Fa.FaLaptopCode size={58} color={'white'}/>
                         </div>
