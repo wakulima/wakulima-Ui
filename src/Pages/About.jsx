@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer2 from '../components/Footer2'
+import MapComponent from '../components/MapComponent'
 import NavBar from '../components/NavBar'
 
 function About() {
@@ -23,6 +24,10 @@ function About() {
             
             </div>
         </div>
+        <div className='py-16'>
+        <div className=' justify-center flex flex-row items-center '>
+            <MapComponent/>
+        </div></div>
         <Footer2/>
         
         
