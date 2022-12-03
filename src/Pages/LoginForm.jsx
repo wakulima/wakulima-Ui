@@ -4,6 +4,7 @@ import { loginUser } from "../components/slices/Authslice";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
+
 function LoginForm() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ function LoginForm() {
     console.log(user);
     dispatch(loginUser(user));
     if (auth.loginStatus === "success" ) {
-        navigate("/");
+        navigate("/farmer");
       }
   };
 
