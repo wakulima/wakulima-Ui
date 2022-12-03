@@ -39,3 +39,8 @@
 .all{
   font-family: 'Poppins';
 }
+.containerMap{
+  width: 80vw;
+  height: 1000px;
+  border-radius: 20px;
+}

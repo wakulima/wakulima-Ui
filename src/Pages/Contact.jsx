@@ -1,8 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import NavBar from '../components/NavBar'
 
 function Contact() {
   return (
     <div>
+        <NavBar/>
+        <div className='px-32 py-56 text-center bg-[#F0EFEB]'>
+            <h1 className='text-6xl tracking-widest font-medium font-Prata text-[#005364]'>Contact Us</h1>
+            
+        </div>
         <div class="flex justify-center items-center w-screen h-screen bg-white">
 
 	<div class="container mx-auto my-4 px-4 lg:px-20">
@@ -14,15 +21,15 @@ function Contact() {
 			<div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
 				<input class="w-full bg-gray-100 text-[#005364] mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="text" placeholder="First Name*" />
-				<input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+				<input class="w-full bg-gray-100 text-[#005364] mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="text" placeholder="Last Name*" />
-				<input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+				<input class="w-full bg-gray-100 text-[#005364] mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="email" placeholder="Email*" />
-				<input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+				<input class="w-full bg-gray-100 text-[#005364] mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="number" placeholder="Phone*" />
         </div>
 				<div class="my-4">
-					<textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+					<textarea placeholder="Message*" class="w-full h-32 bg-gray-100 text-[#005364] mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
 				</div>
 				<div class="my-2 w-1/2 lg:w-1/4">
 					<button class="uppercase text-sm font-bold tracking-wide bg-[#4DB852] text-gray-100 p-3 rounded-lg w-full 

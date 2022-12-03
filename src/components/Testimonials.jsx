@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FarmersDashboard() {
+function Testimonials() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function FarmersDashboard() {
   )
 }
 
-export default FarmersDashboard
+export default Testimonials
