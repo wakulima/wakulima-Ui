@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
+    fontFamily:{
+      'graces': ['Covered By Your Grace'],
+      'Prata': ['Prata','serif'],
+
+    }
   },
   plugins: [],
 }
