@@ -11,6 +11,8 @@ import Farm from '../components/farm/Farm'
 import Footer2 from '../components/Footer2'
 import ServicesSection from '../components/ServicesSection'
 import { Link } from 'react-router-dom'
+import RestartButton from '../components/RestartButton'
+import { motion } from "framer-motion"
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
@@ -51,15 +53,17 @@ function LandingPage() {
     
 // ]
   return (
-    <div className=' all'>
+    <div className=' '>
       {/* all sections */}
+      {/* <RestartButton/> */}
       <NavBar />
+      
         
         <section id='home'>
             
             <HeroSection/>
         </section>
-        <section id='OUr company '>
+        <section id='OUr company all ' className='all'>
             <div className='space-y-24 mx-8 py-16'>
                 <div className='flex flex-col items-center space-y-10'>
                     <h1 className='text-6xl font-Prata text-[#005364]'>Our General Company</h1>
@@ -74,9 +78,9 @@ function LandingPage() {
                         <p className='text-black/50 max-w-[600px] text-lg'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam error nihil, dolorem explicabo accusamus est! Eius soluta exercitationem corporis ratione perspiciatis laborum! Totam, velit enim illum voluptatum iure sunt!
                         </p>
-                        <div>
+                        <div >
                         <Link to={'/about'}>
-                        <button className=' bg-[#4DB852] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</button></Link></div>
+                        <motion.button className=' bg-[#90f795] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</motion.button></Link></div>
                     </div>
                     <div>
                         <div className='w-[600px] h-[600px] bg-[#4DB852] p-6'>
@@ -104,12 +108,13 @@ function LandingPage() {
                     </div></div>
             </div>
         </section>
-        <section className='bg-[#F0EFEB] py-32'>
+        <section className='bg-[#F0EFEB] py-32 all'>
             <ServicesSection/>
         </section>
-        <section className='py-20'>
+        <section id='services' className='py-20 all'>
             <Farm/>
         </section>
+        
      
         {/* <Footer/> */}
         <Footer2/>

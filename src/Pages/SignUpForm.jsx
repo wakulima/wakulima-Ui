@@ -155,9 +155,9 @@ const options = [
                       placeholder="User type"                   
                       options={options} 
                       onSubmit={(e) =>
-                        setUser({ ...user, user_type: e.target.value })
+                        setUser({ ...user, user_type: 'buyer' })
                       }
-                      required
+                      // required
                     />
                     
                     {/* <label
