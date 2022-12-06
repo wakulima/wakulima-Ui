@@ -8,7 +8,8 @@ import SignUpForm from "./Pages/SignUpForm";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Fam from './components/farmdash/Fam'
-
+import ChatPage from "./Pages/ChatPage";
+import Reseacher from "./components/researcher/Reseacher";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Route exact path="/about" element={<About/>}></Route>
           <Route exact path="/contact" element={<Contact/>}></Route>
           <Route exact path="/farmer" element={<Fam />}></Route>
+          <Route exact path="/chat" element={<ChatPage/>}></Route>
+          <Route exact path="/researcher" element={<Reseacher/>}></Route>
         </Routes>
       </Router>
 
