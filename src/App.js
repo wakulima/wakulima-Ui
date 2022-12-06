@@ -8,6 +8,9 @@ import SignUpForm from "./Pages/SignUpForm";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Fam from './components/farmdash/Fam'
+import Admin from "./components/admin/Admin";
+import Buyer from "./components/buyer/Buyer";
+import Researcher from "./components/researcher/Researcher";
 
 
 
@@ -23,6 +26,9 @@ function App() {
           <Route exact path="/about" element={<About/>}></Route>
           <Route exact path="/contact" element={<Contact/>}></Route>
           <Route exact path="/farmer" element={<Fam />}></Route>
+          <Route exact path="/admin" element={<Admin />}></Route>
+          <Route exact path="/buyer" element={<Buyer />}></Route>
+          <Route exact path="/researcher" element={<Researcher />}></Route>
         </Routes>
       </Router>
 

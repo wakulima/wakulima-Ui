@@ -4,7 +4,8 @@ import SideBar from './SideBar'
 import Dashboard from './Dashboard'
 import './farmer.css'
 
-function App() {
+function Researcher
+() {
   return (
     <Div >
       <SideBar/>
@@ -16,4 +17,4 @@ function App() {
 
 const Div = styled.div``;
 
-export default App
+export default Researcher
