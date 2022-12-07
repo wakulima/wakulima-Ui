@@ -7,12 +7,8 @@ import Earnings from "./Earnings";
 import Transfers from "./Transfers";
 import Profile from "./Profile";
 import scrollreveal from "scrollreveal";
-import {Route, Routes,Link} from "react-router-dom";
-import StartsDash from './StartsDash'
-import Chats from './Chats';
 
-
-function Dashboard() {
+function Reseacher() {
   useEffect(() => {
     const sr = scrollreveal({
       origin: "bottom",
@@ -33,20 +29,27 @@ function Dashboard() {
       }
     );
   }, []);
-
+  
+  // useEffect(()=>{
+  //   fetch("https://ec.europa.eu/agrifood/api/beef/prices?")
+  //   .then(res=>res.json())
+  //   .then(data=>console.log(data))
+  // },[])
+  
   return (
     <Section className="farm">
       <NavBar />
-      <div>
-        {/* <Chats/> */}
-         
-          <Routes>
-            <Route path='/dashboard' element={<StartsDash/>}/>
-            <Route path='/charts' element={<Chats/>}/>
-
-          </Routes>
+      <div className="grid">
+        <div className="row__one">
+          <Analytics />
+          <FAQs />
+        </div>
+        <div className="row__two">
+          <Earnings />
+          <Transfers />
+          <Profile />
+        </div>
       </div>
-
     </Section>
   );
 }
@@ -87,4 +90,4 @@ const Section = styled.section`
   }
 `;
 
-export default Dashboard;
+export default Reseacher;

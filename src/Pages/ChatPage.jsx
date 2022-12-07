@@ -54,6 +54,7 @@ function ChatPage() {
             <SenderText/>
             <REceiuverText/>
             <SenderText/>
+            <SenderText/>
             <REceiuverText/>
         </div>
         <div className="py-5 sticky b-0 ">

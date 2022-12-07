@@ -153,5 +153,4 @@ const data = [
         data: 8000,
     },
 ];
-// https://ec.europa.eu/agrifood/api/rice/prices
 export default data

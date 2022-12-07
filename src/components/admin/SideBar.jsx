@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { MdSpaceDashboard } from "react-icons/md";
 import { RiDashboard2Fill } from "react-icons/ri";
-import { FaAddressCard, FaUser } from "react-icons/fa";
+import { FaAddressCard, FaTaxi } from "react-icons/fa";
 import { GiTwirlCenter } from "react-icons/gi";
 import { BsFillChatTextFill } from "react-icons/bs";
 import { IoSettings } from "react-icons/io5";
@@ -10,8 +10,7 @@ import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 import scrollreveal from "scrollreveal";
-import {Route, Routes,Link} from "react-router-dom";
-import StartsDash from "./StartsDash";
+import {Link} from 'react-router-dom'
 function SideBar() {
   const [currentLink, setCurrentLink] = useState(1);
   const [navbarState, setNavbarState] = useState(false);
@@ -49,7 +48,7 @@ function SideBar() {
       <Section>
         <div className="top">
           <div className="brand">
-            <FaUser />
+            <FaTaxi />
             <span>WARA FARM</span>
           </div>
           <div className="toggle">
@@ -70,19 +69,19 @@ function SideBar() {
                 className={currentLink === 1 ? "active" : "none"}
                 onClick={() => setCurrentLink(1)}
               >
-                <Link to="/farmer/dashboard">
+                <a href="/">
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
-                </Link>
+                </a>
               </li>
               <li
                 className={currentLink === 2 ? "active" : "none"}
                 onClick={() => setCurrentLink(2)}
               >
-                <Link to={"/farmer/charts"}>
+                <a href="/">
                   <RiDashboard2Fill />
                   <span> Market Prices</span>
-                </Link>
+                </a>
               </li>
               <li
                 className={currentLink === 3 ? "active" : "none"}
@@ -137,7 +136,7 @@ function SideBar() {
               className={currentLink === 1 ? "active" : "none"}
               onClick={() => setCurrentLink(1)}
             >
-              <a href="/dashboard">
+              <a href="/">
                 <MdSpaceDashboard />
                 <span> Dashboard</span>
               </a>
