@@ -7,6 +7,10 @@ import Earnings from "./Earnings";
 import Transfers from "./Transfers";
 import Profile from "./Profile";
 import scrollreveal from "scrollreveal";
+import {Route, Routes,Link} from "react-router-dom";
+import StartsDash from './StartsDash'
+import Chats from './Chats';
+
 
 function Dashboard() {
   useEffect(() => {
@@ -33,17 +37,16 @@ function Dashboard() {
   return (
     <Section className="farm">
       <NavBar />
-      <div className="grid">
-        <div className="row__one">
-          <Analytics />
-          <FAQs />
-        </div>
-        <div className="row__two">
-          <Earnings />
-          <Transfers />
-          <Profile />
-        </div>
+      <div>
+        {/* <Chats/> */}
+         
+          <Routes>
+            <Route path='/dashboard' element={<StartsDash/>}/>
+            <Route path='/charts' element={<Chats/>}/>
+
+          </Routes>
       </div>
+
     </Section>
   );
 }

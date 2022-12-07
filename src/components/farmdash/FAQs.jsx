@@ -26,7 +26,7 @@ function FAQs() {
     return (
         <Section>
             <div className="title">
-                <h2>Information for drivers</h2>
+                <h2>Information for Farmer</h2>
             </div>
             <div className="faqs">
                 {
@@ -51,7 +51,7 @@ const Section = styled.section`
     ${cardStyle}
     .title {
         h2 {
-            color: #ffc107;
+            color: #4DB852;
             font-family: 'Permanent Marker', cursive;
             letter-spacing: 0.3rem;
         }

@@ -10,6 +10,8 @@ import Contact from "./Pages/Contact";
 import Fam from './components/farmdash/Fam'
 import ChatPage from "./Pages/ChatPage";
 import Reseacher from "./components/researcher/Reseacher";
+import StartsDash from "./components/farmdash/StartsDash";
+import Chats from "./components/farmdash/Chats";
 
 
 function App() {
@@ -23,9 +25,15 @@ function App() {
           <Route exact path="/login" element={<LoginForm />}></Route>
           <Route exact path="/about" element={<About/>}></Route>
           <Route exact path="/contact" element={<Contact/>}></Route>
-          <Route exact path="/farmer" element={<Fam />}></Route>
+          <Route exact path="/farmer/*" element={<Fam />}>
+
+                
+
+          </Route>
           <Route exact path="/chat" element={<ChatPage/>}></Route>
           <Route exact path="/researcher" element={<Reseacher/>}></Route>
+          {/* <Route path='/farmer' element={<StartsDash/>}/>
+            <Route path='/farmer/charts' element={<Chats/>}/> */}
         </Routes>
       </Router>
 

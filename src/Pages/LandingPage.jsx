@@ -13,20 +13,25 @@ import ServicesSection from '../components/ServicesSection'
 import { Link } from 'react-router-dom'
 import RestartButton from '../components/RestartButton'
 import { motion } from "framer-motion"
-import { useEffect } from 'react'
+
 import { data } from 'autoprefixer'
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
 
 function LandingPage() {
-    cons [data,setData]=useState([])
+    const [data,setData]=useState([])
   const auth = useSelector((state) => state.auth);
   console.log(auth)
-  useEffect(()=>{
-    fetch('https://ec.europa.eu/agrifood/api/rice/prices?')
-    .then(response => response.json()).then(data=>setData(data))
-  },[])
+//   useEffect(() => {
+//     fetch("https://ec.europa.eu/agrifood/api/beef/prices?memberStateCodes=PT&years=2020,2021&months=1,3,9&weeks=5,6,7,8,40,41,42&beginDate=01/09/2019&endDate=02/02/2020&carcassCategories=heifers,cows", {
+//         mode: 'no-cors'
+//     }).then(response => response.json()).then(data => {
+//         setData(data);
+//         console.log(data);
+//       });
+//   }, []);
+//   console.log(data);
 
   return (
     <div className=' '>
