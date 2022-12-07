@@ -8,7 +8,7 @@ import Transfers from "./Transfers";
 import Profile from "./Profile";
 import scrollreveal from "scrollreveal";
 
-function Dashboard() {
+function Reseacher() {
   useEffect(() => {
     const sr = scrollreveal({
       origin: "bottom",
@@ -29,7 +29,13 @@ function Dashboard() {
       }
     );
   }, []);
-
+  
+  // useEffect(()=>{
+  //   fetch("https://ec.europa.eu/agrifood/api/beef/prices?")
+  //   .then(res=>res.json())
+  //   .then(data=>console.log(data))
+  // },[])
+  
   return (
     <Section className="farm">
       <NavBar />
@@ -84,4 +90,4 @@ const Section = styled.section`
   }
 `;
 
-export default Dashboard;
+export default Reseacher;

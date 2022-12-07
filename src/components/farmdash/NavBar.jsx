@@ -35,7 +35,7 @@ const Nav = styled.nav`
       color: black;
       span {
         margin-left: 0.5rem;
-        color: #4DB852;
+        color: white;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
         font-family: "Permanent Marker", cursive;
@@ -51,16 +51,16 @@ const Nav = styled.nav`
     padding: 1rem 8rem 1rem 1rem;
     border-radius: 1rem;
     svg {
-      color: #ffc107;
+      color: #4DB852;
     }
     input {
       background-color: transparent;
       border: none;
-      color: #ffc107;
+      color: white;
       font-family: "Permanent Marker", cursive;
       letter-spacing: 0.3rem;
       &::placeholder {
-        color: #ffc107;
+        color: white;
       }
       &:focus {
         outline: none;

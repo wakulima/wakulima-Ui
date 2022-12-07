@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import Community from '../components/Community'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
@@ -13,45 +13,26 @@ import ServicesSection from '../components/ServicesSection'
 import { Link } from 'react-router-dom'
 import RestartButton from '../components/RestartButton'
 import { motion } from "framer-motion"
+
+import { data } from 'autoprefixer'
 // import * as Hi from "react-icons/hi";
 // import * as Md from "react-icons/md";
 // import * as Fi from "react-icons/fi";
 
 function LandingPage() {
+    const [data,setData]=useState([])
   const auth = useSelector((state) => state.auth);
   console.log(auth)
+//   useEffect(() => {
+//     fetch("https://ec.europa.eu/agrifood/api/beef/prices?memberStateCodes=PT&years=2020,2021&months=1,3,9&weeks=5,6,7,8,40,41,42&beginDate=01/09/2019&endDate=02/02/2020&carcassCategories=heifers,cows", {
+//         mode: 'no-cors'
+//     }).then(response => response.json()).then(data => {
+//         setData(data);
+//         console.log(data);
+//       });
+//   }, []);
+//   console.log(data);
 
-//   const features=[
-//     {
-//         icon: <Fi.FiTool/>,
-//         title:'Best Technology Tools',
-//         word: "It's easier to develop a business with the latest modern technology tools that we have so that it can give your business the opportunity to grow bigger",
-//         link: '/home',
-//         linkWord: 'Know More'
-//     },
-//     {
-//         icon: <Md.MdOutlineTimer/>,
-//         title:'Fast & Responsive Result',
-//         word: "We gurantee the impact of our work can be seen quickly and precisely because of our business strategy and great team that work prefessionally ",
-//         link: '/home',
-//         linkWord: 'Know More'
-//     },
-//     {
-//         icon: <Hi.HiOutlineLockClosed/>,
-//         title:'Data Security Gurantee',
-//         word: "We will manage your business and company data security wisely and guranteed to be safe from outside parties, without any fraud from our side",
-//         link: '/home',
-//         linkWord: 'Know More'
-//     },
-//     {
-//         icon: <Md.MdAutoGraph/>,
-//         title:'More Flexible Pricing',
-//         word: "The price offers we provide for our farm produce tend to be more flexible, you can choose according to your needs, you don't have to choose a particular package",
-//         link: '/home',
-//         linkWord: 'Know More'
-//     }
-    
-// ]
   return (
     <div className=' '>
       {/* all sections */}

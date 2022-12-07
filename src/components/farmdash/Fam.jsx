@@ -3,14 +3,15 @@ import styled from 'styled-components'
 import SideBar from './SideBar'
 import Dashboard from './Dashboard'
 import './farmer.css'
-
+import Chats from './Chats'
+import RightSection from './RightSection'
 function App() {
   return (
-    <Div >
+    <div >
       <SideBar/>
-      <Dashboard />
+      <Dashboard/>
 
-    </Div>
+    </div>
   )
 }
 
