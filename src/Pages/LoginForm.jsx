@@ -31,7 +31,15 @@ function LoginForm() {
       if(auth.token.user.user_type == 'buyer'){
         navigate("/buyer");
       }
-      
+      if(auth.token.user.user_type == 'farmer'){
+        navigate("/farmer");
+      }
+      if(auth.token.user.user_type == 'researcher'){
+        navigate("/reseacher");
+      }
+      if(auth.token.user.user_type == 'admin'){
+        navigate("/admin");
+      }
 
         
       }
