@@ -1,7 +1,11 @@
 import React from 'react'
+import { useGetAllProductsQuery } from './slices/productApi'
 
 export default function Product() {
+  const { data, error, isLoading } = useGetAllProductsQuery();
   return (
-    <div>Product</div>
+    <div>
+      <h1>Product</h1>
+      </div>
   )
 }
