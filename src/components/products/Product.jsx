@@ -36,7 +36,7 @@ export default function Product() {
                   <span className="price">${product.price}</span>
                 </div>
                 <button onClick={() => handleAddToCart(product)}>
-                  Add To Cart
+                  Order Now
                 </button>
               </div>
             ))}
