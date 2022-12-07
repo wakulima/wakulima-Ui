@@ -12,12 +12,13 @@ function LoginForm() {
 
   const [user, setUser] = useState({
     email: "",
+    user_type: "",
     password: "",
   });
 
   useEffect(() => {
-    if (auth.loginStatus === "succes" ) {
-      navigate("/");
+    if (auth.user_type === "buyer" ) {
+      navigate("/buyer");
     }
   }, [auth.loginStatus, navigate]);
 
@@ -27,7 +28,12 @@ function LoginForm() {
     console.log(user);
     dispatch(loginUser(user));
     if (auth.loginStatus === "success" ) {
-        navigate("/farmer");
+      if(auth.token.user.user_type == 'buyer'){
+        navigate("/buyer");
+      }
+      
+
+        
       }
   };
 
