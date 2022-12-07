@@ -9,12 +9,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import authReducer from './components/slices/Authslice';
 import productsReducer from './components/products/slices/productSlice';
 import { productsApi } from './components/products/slices/productApi';
+import cartReducer from './components/products/slices/cartSlice';
 
 const store = configureStore({
   reducer: {
     
     auth: authReducer,
     products: productsReducer,
+    cart: cartReducer,
     [productsApi.reducerPath]: productsApi.reducer,
     
   },

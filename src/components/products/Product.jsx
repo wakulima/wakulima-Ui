@@ -1,8 +1,20 @@
-import { useGetAllProductsQuery } from './slices/productApi'
-import '../products/products.css'
+import { useGetAllProductsQuery } from './slices/productApi';
+import '../products/products.css';
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from './slices/cartSlice';
+
 
 export default function Product() {
   const { data, error, isLoading } = useGetAllProductsQuery();
+  const { items: products, status } = useSelector((state) => state.products);
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+    // history.push("/cart");
+  };
+
+
   return (
     <div className="home-container">
     {/* {status === "success" ?  */}
@@ -12,7 +24,7 @@ export default function Product() {
       <p>an error occurred ...</p>
     ) : (
       <>
-        <h2>New Arrivals</h2>
+        <h2>Fresh From the Farm</h2>
         <div className="products">
           {data &&
             data?.map((product) => (
@@ -23,7 +35,7 @@ export default function Product() {
                   <span>{product.description}</span>
                   <span className="price">${product.price}</span>
                 </div>
-                <button>
+                <button onClick={() => handleAddToCart(product)}>
                   Add To Cart
                 </button>
               </div>
