@@ -1,4 +1,5 @@
 import { useGetAllProductsQuery } from './slices/productApi'
+import '../products/products.css'
 
 export default function Product() {
   const { data, error, isLoading } = useGetAllProductsQuery();
