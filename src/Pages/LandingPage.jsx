@@ -57,7 +57,7 @@ function LandingPage() {
                         <h1 className=' text-[#4DB852] font-bold tracking-wide'>WHO WE ARE</h1>
                         <h2 className='family-Poppins font-extrabold text-5xl max-w-[600px]'>We Ensure green environment and Food security across the region</h2>
                         <p className='text-black/50 max-w-[600px] text-lg'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam error nihil, dolorem explicabo accusamus est! Eius soluta exercitationem corporis ratione perspiciatis laborum! Totam, velit enim illum voluptatum iure sunt!
+                        Climate change is a real and present threat to African food security that is only set to get worse. Compounded with population growth, severe soil degradation across much of the continent, weak and disconnected markets, and limited access to up to date weather information, the situation could be very bleak. Better access to information through digital technology platforms however can help farmers to overcome some of these barriers to adaptation and growth.
                         </p>
                         <div >
                         <Link to={'/about'}>
