@@ -21,18 +21,7 @@ function FAQs() {
             icon: <IoMdCash />,
             text: "Withdrawing money through an ATM",
         },
-        {
-            icon: <AiFillCalendar />,
-            text: "How to manage time and get good marks for trips",
-        },
-        {
-            icon: <MdTimelapse />,
-            text: "How to regulate transactions over time",
-        },
-        {
-            icon: <IoMdCash />,
-            text: "Withdrawing money through an ATM",
-        },
+        
     ];
 
     return (
