@@ -35,7 +35,7 @@ function LoginForm() {
         navigate("/farmer");
       }
       else if(auth.token.user.user_type == 'researcher'){
-        navigate("/reseacher");
+        navigate("/researcher");
       }
       else if(auth.token.user.user_type == 'admin'){
         navigate("/admin");
