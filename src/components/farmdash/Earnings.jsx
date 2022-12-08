@@ -3,8 +3,8 @@ import React from 'react'
 import AgriChat from '../AgriChat'
 
 
-function Earnings({data}) {
-    return <AgriChat data={data}/>
+function Earnings({data,title,units}) {
+    return <AgriChat data={data} title={title} units={units}/>
 }
 
 export default Earnings

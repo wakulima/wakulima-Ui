@@ -15,10 +15,10 @@ function Chats() {
     <div className="row__two">
       <Earnings data={data} />
       <Earnings />
-      <Earnings data={rice}/>
-      <Earnings data={sugar}/>
-      <Earnings data={beef}/>
-      <Earnings data={data}/>
+      <Earnings data={rice} title={'Rice'} units={sugar[0].unit}/>
+      <Earnings data={sugar} title={"sugar"} />
+      <Earnings data={beef} title={'Beef'} units={beef[0].unit}/>
+      <Earnings data={data} title={"Fruits"}/>
       <Earnings/>
       <Earnings/>
       <Earnings/>
