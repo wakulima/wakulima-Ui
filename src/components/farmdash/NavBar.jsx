@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <Nav>
       <div className="title">
-        <h4 style={{color: "green"}}>Hi Kim,</h4>
+        <h4 style={{color: "#4DB852"}}>Hi Kim,</h4>
         <h1>
           Welcome to <span>MY Wara dashboard</span>
         </h1>
@@ -32,7 +32,7 @@ const Nav = styled.nav`
       font-weight: bold;
     }
     h1 {
-      color: green;
+      color: #4DB852;
       span {
         margin-left: 0.5rem;
         color: white;

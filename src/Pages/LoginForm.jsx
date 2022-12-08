@@ -32,7 +32,7 @@ function LoginForm() {
         navigate("/buyer");
       }
       else if(auth.token.user.user_type == 'farmer'){
-        navigate("/farmer");
+        navigate("/farmer/dashboard");
       }
       else if(auth.token.user.user_type == 'researcher'){
         navigate("/researcher");

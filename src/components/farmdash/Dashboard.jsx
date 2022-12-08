@@ -10,6 +10,7 @@ import scrollreveal from "scrollreveal";
 import {Route, Routes,Link} from "react-router-dom";
 import StartsDash from './StartsDash'
 import Chats from './Chats';
+import AddItem from "./AddProduct";
 
 
 function Dashboard() {
@@ -43,6 +44,7 @@ function Dashboard() {
           <Routes>
             <Route path='/dashboard' element={<StartsDash/>}/>
             <Route path='/charts' element={<Chats/>}/>
+            <Route path='/addProduct' element={<AddItem/>}/>
 
           </Routes>
       </div>
