@@ -24,7 +24,7 @@ function AgriChat({data}) {
                             animationBegin={800}
                             animationDuration={2000}
                             type="monotone"
-                            dataKey="data"
+                            dataKey="price"
                             stroke="#ffc187"
                             fill="#8068223e"
                             strokeWidth={4}

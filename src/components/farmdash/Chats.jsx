@@ -1,17 +1,24 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import styled from "styled-components";
 import Earnings from './Earnings';
+import data from '../../data/data';
+import rice from '../../data/rice';
+import beef from '../../data/beef';
+import sugar from '../../data/sugar';
 function Chats() {
+
+
+
   return (
     <div className="grid">
 
     <div className="row__two">
-      <Earnings/>
-      <Earnings/>
-      <Earnings/>
-      <Earnings/>
-      <Earnings/>
-      <Earnings/>
+      <Earnings data={data} />
+      <Earnings />
+      <Earnings data={rice}/>
+      <Earnings data={sugar}/>
+      <Earnings data={beef}/>
+      <Earnings data={data}/>
       <Earnings/>
       <Earnings/>
       <Earnings/>

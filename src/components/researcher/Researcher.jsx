@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import SideBar from './SideBar'
-import Dashboard from './Dashboard'
+import Dashboard from '../farmdash/Dashboard'
 import './farmer.css'
 
-function App() {
+function Researcher
+() {
   return (
     <Div >
       <SideBar/>
@@ -16,4 +17,4 @@ function App() {
 
 const Div = styled.div``;
 
-export default App
+export default Researcher

@@ -12,14 +12,15 @@ function LoginForm() {
 
   const [user, setUser] = useState({
     email: "",
+    user_type: "",
     password: "",
   });
 
-  useEffect(() => {
-    if (auth.loginStatus === "succes" ) {
-      navigate("/");
-    }
-  }, [auth.loginStatus, navigate]);
+  // useEffect(() => {
+  //   if (auth.user_type === "buyer" ) {
+  //     navigate("/buyer");
+  //   }
+  // }, [auth.loginStatus, navigate]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,7 +28,20 @@ function LoginForm() {
     console.log(user);
     dispatch(loginUser(user));
     if (auth.loginStatus === "success" ) {
-        navigate("/farmer");
+      if(auth.token.user.user_type == 'buyer'){
+        navigate("/buyer");
+      }
+      else if(auth.token.user.user_type == 'farmer'){
+        navigate("/farmer/dashboard");
+      }
+      else if(auth.token.user.user_type == 'researcher'){
+        navigate("/researcher");
+      }
+      else if(auth.token.user.user_type == 'admin'){
+        navigate("/admin");
+      }
+
+        
       }
   };
 

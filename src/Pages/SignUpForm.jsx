@@ -153,23 +153,17 @@ const options = [
                       type="text"
                       className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                       placeholder="User type"                   
-                   
-                      onSubmit={(e) =>
-                        setUser({ ...user, user_type: 'buyer' })
+                      // options={options} 
+                      onChange={(e) =>
+                        setUser({ ...user, user_type:  e.target.value })
                       }
                       // required
                     >
                       <option value="farmer" >Farmer</option>
                       <option value="buyer" >Buyer</option>
-                      <option value="Researcher" >researcher</option>
+                      <option value="researcher" >Researcher</option>
                     </select>
                     
-                    {/* <label
-                      htmlFor="usertype"
-                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
-                    >
-                      User Type
-                    </label> */}
                   </div>
 
                   <div className="relative">

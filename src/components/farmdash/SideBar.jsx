@@ -12,11 +12,19 @@ import { VscChromeClose } from "react-icons/vsc";
 import scrollreveal from "scrollreveal";
 import {Route, Routes,Link} from "react-router-dom";
 import StartsDash from "./StartsDash";
+import { useSelector, useDispatch } from "react-redux";
+import { logoutUser } from "../slices/Authslice";
+import { toast } from "react-toastify";
+
+
 function SideBar() {
   const [currentLink, setCurrentLink] = useState(1);
   const [navbarState, setNavbarState] = useState(false);
   const html = document.querySelector("html");
   html.addEventListener("click", () => setNavbarState(false));
+
+  const dispatch = useDispatch();
+  const auth = useSelector((state) => state.auth);
 
   useEffect(() => {
     const sr = scrollreveal({
@@ -85,6 +93,15 @@ function SideBar() {
                 </Link>
               </li>
               <li
+                className={currentLink === 8 ? "active" : "none"}
+                onClick={() => setCurrentLink(8)}
+              >
+                <Link to={"/farmer/addProduct"}>
+                  <RiDashboard2Fill />
+                  <span> My Products</span>
+                </Link>
+              </li>
+              <li
                 className={currentLink === 3 ? "active" : "none"}
                 onClick={() => setCurrentLink(3)}
               >
@@ -126,7 +143,13 @@ function SideBar() {
         <div className="logout">
           <a href="/">
             <FiLogOut />
-            <span className="logout">Logout</span>
+            <span className="logout"  
+            onClick={() => {
+              dispatch(logoutUser(null));
+              toast.warning("Logged out!", { position: "bottom-left" });
+            }}>
+              Logout
+            </span>
           </a>
         </div>
       </Section>
