@@ -26,7 +26,7 @@ export const registerUser = createAsyncThunk(
   async (values, { rejectWithValue }) => {
     try {
       const token = await axios.post(`${url}/register`, {
-        full_name: values.name,
+        full_name: values.full_name,
         email: values.email,
         phone_number: values.phone_number,
         location: values.location,
@@ -91,7 +91,7 @@ const authSlice = createSlice({
         return {
           ...state,
           token,
-          name: user.name,
+          full_name: user.full_name,
           email: user.email,
           user_type: user.user_type,
           id: user.id,
@@ -106,7 +106,7 @@ const authSlice = createSlice({
       return {
         ...state,
         token: "",
-        name: "",
+        full_name: "",
         email: "",
         user_type: '',
         id: "",
@@ -128,7 +128,7 @@ const authSlice = createSlice({
         return {
           ...state,
           token: action.payload,
-          name: user.name,
+          full_name: user.full_name,
           email: user.email,
           user_type: user.user_type,
           id: user.id,
@@ -153,7 +153,7 @@ const authSlice = createSlice({
         return {
           ...state,
           token: action.payload,
-          name: user.name,
+          full_name: user.full_name,
           email: user.email,
           user_type: user.user_type,
           id: user.id,
@@ -181,7 +181,7 @@ const authSlice = createSlice({
         return {
           ...state,
           token: action.payload,
-          name: user.name,
+          full_name: user.full_name,
           email: user.email,
           user_type: user.user_type,
           id: user.id,

@@ -64,6 +64,30 @@ function AddItem() {
               
               <div className="divide-y divide-gray-200">
                 <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                
+                <div className="relative">
+                    <input
+                      autoComplete="off"
+                      id="category"
+                      name="category"
+                      type="text"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      placeholder="Category"
+                      value={Items.category_id}
+                      onChange={(e) =>
+                        setItems({ ...Items, category_id: e.target.value })
+                      }
+                    
+                      required
+                    />
+                    <label
+                      htmlFor="category"
+                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+                    >
+                      Category
+                    </label>
+                  </div>
+                
                 <div className="relative">
                     <input
                       autoComplete="off"
@@ -73,7 +97,9 @@ function AddItem() {
                       className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                       placeholder="product name"
                       value={Items.product_name}
-                      onChange={handleChange}
+                      onChange={(e) =>
+                        setItems({ ...Items, product_name: e.target.value })
+                      }
                       required
                     />
                     <label
@@ -84,25 +110,7 @@ function AddItem() {
                     </label>
                   </div>
 
-                  <div className="relative">
-                    <input
-                      autoComplete="off"
-                      id="category"
-                      name="category"
-                      type="text"
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
-                      placeholder="Category"
-                      onChange={handleChange}
-                      value={Items.category_id}
-                      required
-                    />
-                    <label
-                      htmlFor="category"
-                      className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
-                    >
-                      Category
-                    </label>
-                  </div>
+                 
 
                   <div className="relative">
                     <input
@@ -156,7 +164,9 @@ function AddItem() {
                       className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                       placeholder="image"
                       value={Items.image_url}
-                      onChange={handleChange}
+                      onChange={(e) =>
+                        setItems({ ...Items, image_url: e.target.value })
+                      }
                     />
                     <label
                       htmlFor="image"
