@@ -33,6 +33,7 @@ function LoginForm() {
       }
       else if(auth.token.user.user_type == 'farmer'){
         navigate("/farmer/dashboard");
+        console.log(Response)
       }
       else if(auth.token.user.user_type == 'researcher'){
         navigate("/researcher");

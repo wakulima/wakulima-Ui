@@ -11,6 +11,8 @@ import {Route, Routes,Link} from "react-router-dom";
 import StartsDash from './StartsDash'
 import Chats from './Chats';
 import AddItem from "./AddProduct";
+import Product from "../products/Product";
+
 
 
 function Dashboard() {
@@ -45,7 +47,8 @@ function Dashboard() {
             <Route path='/dashboard' element={<StartsDash/>}/>
             <Route path='/charts' element={<Chats/>}/>
             <Route path='/addProduct' element={<AddItem/>}/>
-
+            <Route path='/faqs' element={<FAQs/>}/>
+            <Route exact path="/farmProducts" element={<Product />}></Route>
           </Routes>
       </div>
 
