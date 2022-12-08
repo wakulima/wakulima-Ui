@@ -4,13 +4,13 @@ import { AreaChart, Area, Tooltip, ResponsiveContainer } from 'recharts'
 import { cardStyle } from './farmdash/ReusableStyles'
 
 
-function AgriChat({data}) {
+function AgriChat({data, title,units}) {
     return (
         <Section>
             <div className="top">
                 <div className="info">
-                    <h4>This month earnings</h4>
-                    <h1>$682.5</h1>
+                    <h4>{title}</h4>
+                    <h1>{units}</h1>
                     <div className="growth">
                         <span>+2.45%</span>
                     </div>
@@ -24,7 +24,7 @@ function AgriChat({data}) {
                             animationBegin={800}
                             animationDuration={2000}
                             type="monotone"
-                            dataKey="data"
+                            dataKey="price"
                             stroke="#ffc187"
                             fill="#8068223e"
                             strokeWidth={4}

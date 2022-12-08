@@ -45,7 +45,7 @@ function Dashboard() {
          
           <Routes>
             <Route path='/dashboard' element={<StartsDash/>}/>
-            <Route path='/charts' element={<Chats/>}/>
+            <Route path='/charts' element={<Chats />}/>
             <Route path='/addProduct' element={<AddItem/>}/>
             <Route path='/faqs' element={<FAQs/>}/>
             <Route exact path="/farmProducts" element={<Product />}></Route>

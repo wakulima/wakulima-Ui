@@ -14,7 +14,7 @@ export default function StartsDash() {
       <FAQs/>
     </div>
     <div className="row__two">
-      <Earnings/>
+      <Earnings title={'This month earnings'} units={'$682.5'}/>
       <Transfers/>
       <Profile/>
     </div>

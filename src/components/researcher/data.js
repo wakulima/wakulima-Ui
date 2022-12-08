@@ -1,3 +1,4 @@
+
 const data = [
     { data: 4500 },
     {
@@ -153,4 +154,5 @@ const data = [
         data: 8000,
     },
 ];
-export default data
+
+export default data;

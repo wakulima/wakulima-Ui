@@ -1,10 +1,10 @@
 import React from 'react'
-import data from './data'
+
 import AgriChat from '../AgriChat'
 
 
-function Earnings() {
-    return <AgriChat data={data}/>
+function Earnings({data,title,units}) {
+    return <AgriChat data={data} title={title} units={units}/>
 }
 
 export default Earnings

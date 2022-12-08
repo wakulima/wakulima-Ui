@@ -93,8 +93,8 @@ function SideBar() {
                 </Link>
               </li>
               <li
-                className={currentLink === 2 ? "active" : "none"}
-                onClick={() => setCurrentLink(2)}
+                className={currentLink === 8 ? "active" : "none"}
+                onClick={() => setCurrentLink(8)}
               >
                 <Link to={"/farmer/farmProducts"}>
                   <RiDashboard2Fill />
