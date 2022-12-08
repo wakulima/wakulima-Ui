@@ -77,9 +77,7 @@ function LandingPage() {
             <div className='space-x-16 w-fit m-auto space-y-12 pt-32'>
                 <h1 className=' text-[#4DB852] text-2xl underline font-bold tracking-wide'>Last 6 months Actions</h1>
                 
-                <p className=" text-black max-w-[900px] text-lg tracking-wide ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-                illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-                illo tenetur fuga ducimus numquam ea!
+                <p className=" text-black max-w-[900px] text-lg tracking-wide ">Accurate and easy to use Farm Management Information Systems/Applications are of fundamental importance for a successful operational agricultural sector. Enabled farmers to sell their products faster to avoid wastage of food through.
                     </p>
                     <div className='flex flex-row justify-center md:space-x-28 '>
                         <HeroTitles number={'250'} word={'Our Happy Customer'}/>
