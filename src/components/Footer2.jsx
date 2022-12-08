@@ -20,8 +20,8 @@ function Footer2() {
                 <div className=''>
                     <h1 className='text-3xl'>Services</h1>
                     <ul className='text-lg space-y-4 text-gray-600/70'>
-                        <li>Organic Food Delivery</li>
-                        <li>Organic Food Delivery</li>
+                        <li>Farmer-to-Everything Connections </li>
+                        <li>Farmer-to-Everything Connections </li>
                         <li>Organic Food Delivery</li>
                         <li>Organic Food Delivery</li>
                         <li>Organic Food Delivery</li>
