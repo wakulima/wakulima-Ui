@@ -17,7 +17,7 @@ import ChatPage from "./Pages/ChatPage";
 import Reseacher from "./components/researcher/Reseacher";
 import StartsDash from "./components/farmdash/StartsDash";
 import Chats from "./components/farmdash/Chats";
-
+import AddItem from './components/farmdash/AddProduct'
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <Route exact path="/about" element={<About/>}></Route>
           <Route exact path="/contact" element={<Contact/>}></Route>
           <Route exact path="/farmer" element={<Fam />}></Route>
+          <Route exact path="/addProduct" element={<AddItem/>}></Route>
           <Route exact path="/admin" element={<Admin />}></Route>
           <Route exact path="/buyer" element={<Buyer />}></Route>
           <Route exact path="/products" element={<Product />}></Route>
