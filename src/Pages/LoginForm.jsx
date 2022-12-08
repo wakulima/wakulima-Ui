@@ -16,11 +16,11 @@ function LoginForm() {
     password: "",
   });
 
-  useEffect(() => {
-    if (auth.user_type === "buyer" ) {
-      navigate("/buyer");
-    }
-  }, [auth.loginStatus, navigate]);
+  // useEffect(() => {
+  //   if (auth.user_type === "buyer" ) {
+  //     navigate("/buyer");
+  //   }
+  // }, [auth.loginStatus, navigate]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,13 +31,13 @@ function LoginForm() {
       if(auth.token.user.user_type == 'buyer'){
         navigate("/buyer");
       }
-      if(auth.token.user.user_type == 'farmer'){
+      else if(auth.token.user.user_type == 'farmer'){
         navigate("/farmer");
       }
-      if(auth.token.user.user_type == 'researcher'){
+      else if(auth.token.user.user_type == 'researcher'){
         navigate("/reseacher");
       }
-      if(auth.token.user.user_type == 'admin'){
+      else if(auth.token.user.user_type == 'admin'){
         navigate("/admin");
       }
 
