@@ -11,7 +11,7 @@ function FAQs() {
     const faqs = [
         {
             icon: <AiFillCalendar />,
-            text: "How to manage time and get good marks for trips",
+            text: "How to track my products",
         },
         {
             icon: <MdTimelapse />,
@@ -26,7 +26,7 @@ function FAQs() {
     return (
         <Section>
             <div className="title">
-                <h2>Information for drivers</h2>
+                <h2>FAQs</h2>
             </div>
             <div className="faqs">
                 {
@@ -51,7 +51,7 @@ const Section = styled.section`
     ${cardStyle}
     .title {
         h2 {
-            color: #ffc107;
+            color: #4DB852;
             font-family: 'Permanent Marker', cursive;
             letter-spacing: 0.3rem;
         }

@@ -89,7 +89,7 @@ function SideBar() {
               >
                 <a href="/">
                   <RiDashboard2Fill />
-                  <span> Market Prices</span>
+                  <span> Market Place</span>
                 </a>
               </li>
               <li
@@ -98,7 +98,7 @@ function SideBar() {
               >
                 <a href="/">
                   <FaAddressCard />
-                  <span> Payment Details</span>
+                  <span> My Cart</span>
                 </a>
               </li>
               <li
@@ -107,7 +107,7 @@ function SideBar() {
               >
                 <a href="/">
                   <GiTwirlCenter />
-                  <span> Learning Center</span>
+                  <span> My orders</span>
                 </a>
               </li>
               <li
