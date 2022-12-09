@@ -5,9 +5,9 @@ import UserContactComponent from '../components/UserContactComponent'
 
 function ChatPage() {
   return (
-    <div className=''>
+    <div className='font-Poppins'>
       
-      <div className="h-screen container mx-auto shadow-lg rounded-lg">
+      <div className="h-screen container shadow-black/50 mx-auto shadow-2xl rounded-lg">
     
     <div className="px-5 py-5 flex justify-between items-center bg-white border-b-2">
       <div className="font-semibold text-2xl">Farmers chat</div>
@@ -68,9 +68,9 @@ function ChatPage() {
      
       <div className="w-2/5 border-l-2 px-5">
         <div className="flex flex-col">
-          <div className="font-semibold text-xl py-4">Mern Stack Group</div>
+          <div className="font-semibold text-xl py-4">Beef farmers Group</div>
           <img
-            src="https://source.unsplash.com/L2cxSuKWbpo/600x600"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uKOUbqYeg5xajCA_Fn9lqh-zfQhJoget0pXxzg1pVSGuqSPsaQ8C_mBt8yRdoKClqCY&usqp=CAU"
             className="object-cover rounded-xl h-64"
             alt=""
           />
