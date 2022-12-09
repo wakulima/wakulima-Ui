@@ -6,7 +6,12 @@ const initialState = {
   items: [],
   status: null,
 };
+const token = localStorage.getItem("jwt");
+console.log(token)
 
+const config = {
+  headers: { Authorization: `Bearer ${token}` }
+};
 
 export const productsFetch = createAsyncThunk(
   "products/productsFetch",
@@ -15,6 +20,10 @@ export const productsFetch = createAsyncThunk(
     try {
       const response = await axios.get(
         "http://127.0.0.1:3000/products",
+
+        {},
+        
+         config,
 
       );
       

@@ -12,6 +12,7 @@ import StartsDash from './StartsDash'
 import Chats from './Chats';
 import AddItem from "./AddProduct";
 import Product from "../products/Product";
+import FarmProduct from "./FarmProducts";
 
 
 
@@ -48,7 +49,7 @@ function Dashboard() {
             <Route path='/charts' element={<Chats />}/>
             <Route path='/addProduct' element={<AddItem/>}/>
             <Route path='/faqs' element={<FAQs/>}/>
-            <Route exact path="/farmProducts" element={<Product />}></Route>
+            <Route exact path="/farmProducts" element={<FarmProduct />}></Route>
           </Routes>
       </div>
 
