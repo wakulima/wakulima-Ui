@@ -29,7 +29,7 @@ function LoginForm() {
     dispatch(loginUser(user));
     if (auth.loginStatus === "success" ) {
       if(auth.token.user.user_type === 'buyer'){
-        navigate("/buyer");
+        navigate("/buyer/buyProducts");
       }
       else if(auth.token.user.user_type === 'farmer'){
         navigate("/farmer/dashboard");
