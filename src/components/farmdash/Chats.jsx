@@ -13,17 +13,17 @@ function Chats() {
     <div className="grid">
 
     <div className="row__two">
-      <Earnings data={data} />
-      <Earnings />
-      <Earnings data={rice} title={'Rice'} units={sugar[0].unit}/>
+      <Earnings data={data} title={'beans'} units={"/100kg bag"} />
+    
+      <Earnings data={rice} title={'Rice'} units={rice[0].unit}/>
       <Earnings data={sugar} title={"sugar"} />
       <Earnings data={beef} title={'Beef'} units={beef[0].unit}/>
-      <Earnings data={data} title={"Fruits"}/>
-      <Earnings/>
-      <Earnings/>
-      <Earnings/>
-      <Earnings/>
-      <Earnings/>
+      
+      <Earnings data={sugar} title={"Maize"} units={'/100kg bag'}/>
+      <Earnings data={data} title={"Fruits"} units={'/1 crate'}/>
+      <Earnings data={beef} title={'Avocado'} units={'/tonne'}/>
+      <Earnings data={data} title={"Milk"} units={'/40L'}/>
+      <Earnings data={data} title={"Fruits"} units={'/1 crate'}/>
       <Earnings/>
     </div>
   </div>
