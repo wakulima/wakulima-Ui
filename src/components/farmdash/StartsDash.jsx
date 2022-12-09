@@ -5,7 +5,7 @@ import FAQs from './FAQs'
 import Profile from './Profile'
 import Transfers from './Transfers'
 import styled from "styled-components";
-
+import data from '../../data/data'
 export default function StartsDash() {
   return (
     <div className="grid">
@@ -14,7 +14,7 @@ export default function StartsDash() {
       <FAQs/>
     </div>
     <div className="row__two">
-      <Earnings title={'This month earnings'} units={'$682.5'}/>
+      <Earnings data={data} title={'This month earnings'} units={'$682.5'}/>
       <Transfers/>
       <Profile/>
     </div>
