@@ -24,16 +24,16 @@ export default function Product() {
       <p>an error occurred ...</p>
     ) : (
       <>
-        <h2>Fresh From the Farm</h2>
-        <div className="products">
+        <h2 className='text-white'>Fresh From the Farm</h2>
+        <div className="products text-white">
           {data &&
             data?.map((product) => (
               <div key={product.id} className="product">
-                <h3>{product.name}</h3>
-                <img src={product.image_url} alt={product.name} />
+                <h3>{product.product_name}</h3>
+                <img src={product.image_url} alt={product.product_name} />
                 <div className="details">
-                  <span>{product.description}</span>
-                  <span className="price">${product.price}</span>
+                  <span>{product.quantity}kg(s) Available </span>
+                  <span className="price">Ksh{product.price}/kg</span>
                 </div>
                 <button onClick={() => handleAddToCart(product)}>
                   Order Now
