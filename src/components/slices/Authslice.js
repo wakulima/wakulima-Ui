@@ -54,7 +54,9 @@ export const loginUser = createAsyncThunk(
         password: values.password,
       });
 
-      localStorage.setItem("token", token.data);
+      localStorage.setItem("jwt", token.data.jwt);
+      console.log(token.data.jwt)
+      // console.log(response.data)
       return token.data;
     } catch (error) {
       console.log(error.response.data);

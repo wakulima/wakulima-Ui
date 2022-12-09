@@ -32,13 +32,14 @@ function App() {
           <Route exact path="/contact" element={<Contact/>}></Route>
           <Route exact path="/farmer" element={<Fam />}></Route>
           <Route exact path="/addProduct" element={<AddItem/>}></Route>
+          <Route  path="/buyProducts" element={<Product />}/>
           <Route exact path="/message" element={<ChatPage/>}></Route>
           <Route exact path="/admin" element={<Admin />}></Route>
           <Route exact path="/buyer" element={<Buyer />}></Route>
           <Route exact path="/products" element={<Product />}></Route>
           <Route exact path="/researcher" element={<Researcher />}></Route>
-          <Route exact path="/farmer/*" element={<Fam />}>
-
+          <Route exact path="/farmer/*" element={<Fam />}/>
+          <Route exact path="/buyer/*" element={<Buyer />}>
                 
 
           </Route>

@@ -78,43 +78,43 @@ function SideBar() {
                 className={currentLink === 1 ? "active" : "none"}
                 onClick={() => setCurrentLink(1)}
               >
-                <a href="/">
+                 <Link to={"/buyer/buyProducts"}>
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
-                </a>
+                </Link>
               </li>
               <li
                 className={currentLink === 2 ? "active" : "none"}
                 onClick={() => setCurrentLink(2)}
               >
-                <a href="/">
+                 <Link to={"/buyer/buyProducts"}>
                   <RiDashboard2Fill />
-                  <span> Market Prices</span>
-                </a>
+                  <span> Market Place</span>
+                </Link>
               </li>
               <li
                 className={currentLink === 3 ? "active" : "none"}
                 onClick={() => setCurrentLink(3)}
               >
-                <a href="/">
+                <a href="#">
                   <FaAddressCard />
-                  <span> Payment Details</span>
+                  <span> My Cart</span>
                 </a>
               </li>
               <li
                 className={currentLink === 4 ? "active" : "none"}
                 onClick={() => setCurrentLink(4)}
               >
-                <a href="/">
+                <a href="#">
                   <GiTwirlCenter />
-                  <span> Learning Center</span>
+                  <span> My orders</span>
                 </a>
               </li>
               <li
                 className={currentLink === 5 ? "active" : "none"}
                 onClick={() => setCurrentLink(5)}
               >
-                <a href="/">
+                <a href="#">
                   <BsFillChatTextFill />
                   <span> FAQs</span>
                 </a>
@@ -123,7 +123,7 @@ function SideBar() {
                 className={currentLink === 6 ? "active" : "none"}
                 onClick={() => setCurrentLink(6)}
               >
-                <a href="/">
+                <a href="#">
                   <IoSettings />
                   <span> Settings</span>
                 </a>

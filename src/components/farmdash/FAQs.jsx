@@ -21,10 +21,11 @@ function FAQs() {
             icon: <IoMdCash />,
             text: "Withdrawing money through an ATM",
         },
+        
     ];
 
     return (
-        <Section>
+        <Section className='content'>
             <div className="title">
                 <h2>Information for Farmer</h2>
             </div>
@@ -48,7 +49,10 @@ function FAQs() {
 }
 
 const Section = styled.section`
-    ${cardStyle}
+     ${cardStyle}
+   .content{
+       padding:2rem;
+   }
     .title {
         h2 {
             color: #4DB852;
@@ -58,6 +62,7 @@ const Section = styled.section`
     }
     .faqs {
         display: flex;
+        padding:2rem;
         flex-direction: column;
         gap: 1rem;
         margin-top: 1rem;
