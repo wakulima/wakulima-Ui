@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../components/slices/Authslice";
 // import Select from 'react-select'
@@ -244,8 +244,9 @@ const options = [
                 {auth.registerStatus === "rejected" ? "Email has already been taken" : null}
                 </div>
                
+                
                   </div>
-                  
+                  <h3>Already have an account? <Link to="/login" className="text-green-600">Login</Link></h3>
                 </div>
               </div>
             </div>

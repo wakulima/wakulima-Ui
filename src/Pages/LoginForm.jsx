@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../components/slices/Authslice";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
 
@@ -28,17 +28,17 @@ function LoginForm() {
     console.log(user);
     dispatch(loginUser(user));
     if (auth.loginStatus === "success" ) {
-      if(auth.token.user.user_type == 'buyer'){
+      if(auth.token.user.user_type === 'buyer'){
         navigate("/buyer");
       }
-      else if(auth.token.user.user_type == 'farmer'){
+      else if(auth.token.user.user_type === 'farmer'){
         navigate("/farmer/dashboard");
         console.log(Response)
       }
-      else if(auth.token.user.user_type == 'researcher'){
+      else if(auth.token.user.user_type === 'researcher'){
         navigate("/researcher");
       }
-      else if(auth.token.user.user_type == 'admin'){
+      else if(auth.token.user.user_type === 'admin'){
         navigate("/admin");
       }
 
@@ -104,6 +104,7 @@ function LoginForm() {
                 <div className="relative">
                 {auth.loginStatus === "rejected" ? "Invalid username or password" : null}
                 </div>
+                <h3>Don't have an account? <Link to="/signup" className="text-green-600">Signup</Link></h3>
               </div>
             </div>
           </div>
