@@ -137,6 +137,15 @@ function SideBar() {
                   <span> Settings</span>
                 </a>
               </li>
+              <li
+                className={currentLink === 7 ? "active" : "none"}
+                onClick={() => setCurrentLink(7)}
+              >
+                <a href="/">
+                  <IoSettings />
+                  <span> Post issue</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
