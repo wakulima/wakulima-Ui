@@ -20,8 +20,9 @@ function Researchpost() {
         <div className='products'>
           {data &&
             data?.map((product) => (
-        <div className='product'>
-<Card style={{ width: '18rem' }}>      <Card.Img style={{ height: '16rem' }} variant="top" src={product.picture} />
+        <div key={product.id} className='product'>
+{/* <Card style={{ width: '18rem' }}>       */}
+<Card.Img style={{ height: '16rem' }} variant="top" src={product.picture} />
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>
@@ -29,7 +30,7 @@ function Researchpost() {
         </Card.Text>
         <Button variant="primary">Read More</Button>
       </Card.Body>
-    </Card>
+    {/* <Card> */}
     </div>
      ))}
     </div>
