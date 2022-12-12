@@ -18,6 +18,7 @@ import Reseacher from "./components/researcher/Reseacher";
 import StartsDash from "./components/farmdash/StartsDash";
 import Chats from "./components/farmdash/Chats";
 import AddItem from './components/farmdash/AddProduct'
+import Researchpost from "./components/researcher/Researchpost";
 
 function App() {
   return (
@@ -39,10 +40,12 @@ function App() {
           <Route exact path="/products" element={<Product />}></Route>
           <Route exact path="/researcher" element={<Researcher />}></Route>
           <Route exact path="/farmer/*" element={<Fam />}/>
-          <Route exact path="/buyer/*" element={<Buyer />}>
+          <Route exact path="/buyer/*" element={<Buyer />}/>
+          <Route exact path="/researcher/*" element={<Researcher />}/>
+          <Route exact path="/researcherpost" element={<Researchpost />}/>
                 
 
-          </Route>
+         
           <Route exact path="/chat" element={<ChatPage/>}></Route>
           <Route exact path="/researcher" element={<Reseacher/>}></Route>
           {/* <Route path='/farmer' element={<StartsDash/>}/>
