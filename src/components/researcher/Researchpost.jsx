@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './posts.css'
 import Button from 'react-bootstrap/Button';
 import { useGetAllProductsQuery } from '../products/slices/rpostApi';
@@ -20,11 +20,12 @@ function Researchpost() {
         <div className='products'>
           {data &&
             data?.map((product) => (
-        <div key={product.id} className='product'>
+        <div key={product.id} className='product text-white'>
 {/* <Card style={{ width: '18rem' }}>       */}
+<h3>{product.title}</h3>
 <Card.Img style={{ height: '16rem' }} variant="top" src={product.picture} />
       <Card.Body>
-        <Card.Title>{product.title}</Card.Title>
+        {/* <Card.Title>{product.title}</Card.Title> */}
         <Card.Text>
           {product.content}
         </Card.Text>

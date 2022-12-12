@@ -42,7 +42,6 @@ function App() {
           <Route exact path="/farmer/*" element={<Fam />}/>
           <Route exact path="/buyer/*" element={<Buyer />}/>
           <Route exact path="/researcher/*" element={<Researcher />}/>
-          <Route exact path="/researcherpost" element={<Researchpost />}/>
                 
 
          

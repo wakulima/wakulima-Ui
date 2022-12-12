@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SideBar from './SideBar'
-import Dashboard from '../farmdash/Dashboard'
+import Dashboard from './dashboard'
 import './farmer.css'
 
 function Researcher
