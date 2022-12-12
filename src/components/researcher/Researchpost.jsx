@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './posts.css'
 import Button from 'react-bootstrap/Button';
 import { useGetAllProductsQuery } from '../products/slices/rpostApi';
 import { useDispatch, useSelector } from "react-redux";
@@ -21,14 +21,13 @@ function Researchpost() {
           {data &&
             data?.map((product) => (
         <div className='product'>
-    <Card style={{ width: '18rem', height:'16rem' }}>
-      <Card.Img style={{ height: '16rem' }} variant="top" src={product.picture} />
+<Card style={{ width: '18rem' }}>      <Card.Img style={{ height: '16rem' }} variant="top" src={product.picture} />
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>
           {product.content}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Read More</Button>
       </Card.Body>
     </Card>
     </div>
