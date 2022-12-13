@@ -9,7 +9,7 @@ function NavBar() {
       <div className="title">
         <h4 style={{color: "#4DB852"}}>Hello,</h4>
         <h1>
-          Welcome to <span> Wara Farm</span>
+          Welcome to <span> Wara Farm Marketplace</span>
         </h1>
       </div>
       <div className="search">
