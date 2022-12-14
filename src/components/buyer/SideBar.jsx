@@ -10,12 +10,10 @@ import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 import scrollreveal from "scrollreveal";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { logoutUser } from "../slices/Authslice";
 import { useSelector, useDispatch } from "react-redux";
 import { toast } from "react-toastify";
-
-
 
 function SideBar() {
   const [currentLink, setCurrentLink] = useState(1);
@@ -25,6 +23,7 @@ function SideBar() {
 
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
+  const { cartTotalQuantity } = useSelector((state) => state.cart);
 
   useEffect(() => {
     const sr = scrollreveal({
@@ -78,7 +77,7 @@ function SideBar() {
                 className={currentLink === 1 ? "active" : "none"}
                 onClick={() => setCurrentLink(1)}
               >
-                 <Link to={"/buyer/buyProducts"}>
+                <Link to={"/buyer/buyProducts"}>
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
                 </Link>
@@ -87,7 +86,7 @@ function SideBar() {
                 className={currentLink === 2 ? "active" : "none"}
                 onClick={() => setCurrentLink(2)}
               >
-                 <Link to={"/buyer/buyProducts"}>
+                <Link to={"/buyer/buyProducts"}>
                   <RiDashboard2Fill />
                   <span> Market Place</span>
                 </Link>
@@ -96,10 +95,25 @@ function SideBar() {
                 className={currentLink === 3 ? "active" : "none"}
                 onClick={() => setCurrentLink(3)}
               >
+                <div className="nav-bag">
                 <a href="#">
-                  <FaAddressCard />
-                  <span> My Cart</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="currentColor"
+                    className="bi bi-handbag-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                  </svg>
+                  <span>MyCart</span>
+                  <span className="bag-quantity">
+                   
+                    <span>{cartTotalQuantity}</span>
+                  </span>
                 </a>
+                </div>
               </li>
               <li
                 className={currentLink === 4 ? "active" : "none"}
@@ -134,11 +148,13 @@ function SideBar() {
         <div className="logout">
           <a href="/">
             <FiLogOut />
-            <span className="logout"  
-            onClick={() => {
-              dispatch(logoutUser(null));
-              toast.warning("Logged out!", { position: "bottom-left" });
-            }}>
+            <span
+              className="logout"
+              onClick={() => {
+                dispatch(logoutUser(null));
+                toast.warning("Logged out!", { position: "bottom-left" });
+              }}
+            >
               Logout
             </span>
           </a>
@@ -256,7 +272,7 @@ const Section = styled.section`
           padding: 0.6rem 1rem;
           border-radius: 0.6rem;
           &:hover {
-            background-color: #4DB852;
+            background-color: #4db852;
             a {
               color: white;
             }
@@ -269,7 +285,7 @@ const Section = styled.section`
           }
         }
         .active {
-          background-color: #4DB852;
+          background-color: #4db852;
           a {
             color: black;
           }

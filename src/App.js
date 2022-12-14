@@ -24,7 +24,7 @@ import Researchpost from "./components/researcher/Researchpost";
 function App() {
   return (
     <div className="App">
-
+      <ToastContainer/>
       <Router>
         <Routes>
           <Route exact path="/" element={<LandingPage />}></Route>
