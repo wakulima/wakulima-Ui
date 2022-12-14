@@ -57,18 +57,18 @@ const Cart = () => {
         </div>
       ) : (
         <div>
-          <div className="titles">
+          <div className="titles text-white">
             <h3 className="product-title">Product</h3>
             <h3 className="price">Price</h3>
             <h3 className="quantity">Quantity</h3>
             <h3 className="total">Total</h3>
           </div>
-          <div className="cart-items">
+          <div className="cart-items text-white">
             {cart.cartItems &&
               cart.cartItems.map((cartItem) => (
                 <div className="cart-item" key={cartItem.id}>
                   <div className="cart-product">
-                    <img src={cartItem.image} alt={cartItem.name} />
+                    <img src={cartItem.image_url} alt={cartItem.product_name} />
                     <div>
                       <h3>{cartItem.name}</h3>
                       <p>{cartItem.desc}</p>
@@ -95,10 +95,10 @@ const Cart = () => {
             <button className="clear-btn" onClick={() => handleClearCart()}>
               Clear Cart
             </button>
-            <div className="cart-checkout">
+            <div className="cart-checkout text-white">
               <div className="subtotal">
                 <span>Subtotal</span>
-                <span className="amount">${cart.cartTotalAmount}</span>
+                <span className="amount text-white">${cart.cartTotalAmount}</span>
               </div>
               <p>Taxes and shipping calculated at checkout</p>
               <button>Check out</button>
