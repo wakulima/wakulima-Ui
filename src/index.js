@@ -27,9 +27,11 @@ const store = configureStore({
     
   },
   middleware: (getDefaultMiddleware) =>
-    (getDefaultMiddleware().concat(productsApi.middleware),
-    getDefaultMiddleware().concat(researchpostApi.middleware)
+    (
+    getDefaultMiddleware().concat(productsApi.middleware).concat(researchpostApi.middleware)
+   
     ),
+    
 });
 
 // store.dispatch(productsFetch());
