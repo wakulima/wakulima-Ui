@@ -96,7 +96,7 @@ function SideBar() {
                 onClick={() => setCurrentLink(3)}
               >
                 <div className="nav-bag">
-                <a href="#">
+                <Link to={"/buyer/myCart"}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="15"
@@ -112,7 +112,7 @@ function SideBar() {
                    
                     <span>{cartTotalQuantity}</span>
                   </span>
-                </a>
+                </Link>
                 </div>
               </li>
               <li

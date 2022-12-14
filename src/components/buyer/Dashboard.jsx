@@ -10,6 +10,7 @@ import scrollreveal from "scrollreveal";
 import {Route, Routes,Link} from "react-router-dom";
 import Product from "../products/Product";
 import Buyer from "./Buyer";
+import Cart from "../cart/Cart";
 
 function Dashboard() {
   useEffect(() => {
@@ -42,7 +43,7 @@ function Dashboard() {
             
             {/* <Route path='/faqs' element={<FAQs/>}/> */}
             <Route  path="/buyProducts" element={<Product />}/>
-            
+            <Route  path="/myCart" element={<Cart />}/>
             {/* <Route exact path="/buyer" element={<Buyer />}></Route> */}
           </Routes>
       </div>

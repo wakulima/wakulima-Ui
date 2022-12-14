@@ -6,7 +6,7 @@ import {
   decreaseCart,
   getTotals,
   removeFromCart,
-} from "../slices/cartSlice";
+} from "../products/slices/cartSlice";
 
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const Cart = () => {
         <div className="cart-empty">
           <p>Your cart is currently empty</p>
           <div className="start-shopping">
-            <Link to="/">
+            <Link to="/buyer/buyProducts">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -103,7 +103,7 @@ const Cart = () => {
               <p>Taxes and shipping calculated at checkout</p>
               <button>Check out</button>
               <div className="continue-shopping">
-                <Link to="/">
+                <Link to="/buyer/buyProducts">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
