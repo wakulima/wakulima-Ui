@@ -7,11 +7,11 @@ import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 
 import authReducer from './components/slices/Authslice';
-import productsReducer from './components/products/slices/productSlice';
+import productsReducer, { productsFetch } from './components/products/slices/productSlice';
 import { productsApi } from './components/products/slices/productApi';
 import { researchpostApi } from './components/products/slices/rpostApi';
 import research_infosReducer  from './components/products/slices/rpostSlice';
-import cartReducer from './components/products/slices/cartSlice';
+import cartReducer, { getTotals }from './components/products/slices/cartSlice';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const store = configureStore({
@@ -34,8 +34,8 @@ const store = configureStore({
     
 });
 
-// store.dispatch(productsFetch());
-// store.dispatch(getTotals());
+store.dispatch(productsFetch());
+store.dispatch(getTotals());
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

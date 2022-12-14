@@ -12,7 +12,8 @@ import Admin from "./components/admin/Admin";
 import Buyer from "./components/buyer/Buyer";
 import Researcher from "./components/researcher/Researcher";
 import Product from "./components/products/Product";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import ChatPage from "./Pages/ChatPage";
 import Reseacher from "./components/researcher/Reseacher";
 import StartsDash from "./components/farmdash/StartsDash";
