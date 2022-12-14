@@ -13,9 +13,7 @@ function HeroSection() {
       <div className="relative mx-auto w-screen px-4 py-32  h-screen justify-center    flex flex-row ">
         <div className="aloign-center space-y-14">
         <h1 className="text-white text-6xl font-bold max-w-[900px] text-center">Green world & Food Security Solutions</h1>
-        <p className="text-white max-w-[900px] text-lg tracking-wide text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!</p>
+        <p className="text-white max-w-[900px] text-lg tracking-wide text-center"><b>One of the sustainable approaches to food security is sustainable agricultural practices. Zero hunger is possible!</b></p>
 
             <div className="flex flex-row space-x-8 justify-center ">
             <Link to='/signup'>

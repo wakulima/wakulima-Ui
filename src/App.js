@@ -12,17 +12,19 @@ import Admin from "./components/admin/Admin";
 import Buyer from "./components/buyer/Buyer";
 import Researcher from "./components/researcher/Researcher";
 import Product from "./components/products/Product";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import ChatPage from "./Pages/ChatPage";
 import Reseacher from "./components/researcher/Reseacher";
 import StartsDash from "./components/farmdash/StartsDash";
 import Chats from "./components/farmdash/Chats";
 import AddItem from './components/farmdash/AddProduct'
+import Researchpost from "./components/researcher/Researchpost";
 
 function App() {
   return (
     <div className="App">
-
+      <ToastContainer/>
       <Router>
         <Routes>
           <Route exact path="/" element={<LandingPage />}></Route>
@@ -32,16 +34,18 @@ function App() {
           <Route exact path="/contact" element={<Contact/>}></Route>
           <Route exact path="/farmer" element={<Fam />}></Route>
           <Route exact path="/addProduct" element={<AddItem/>}></Route>
+          <Route  path="/buyProducts" element={<Product />}/>
           <Route exact path="/message" element={<ChatPage/>}></Route>
           <Route exact path="/admin" element={<Admin />}></Route>
           <Route exact path="/buyer" element={<Buyer />}></Route>
           <Route exact path="/products" element={<Product />}></Route>
           <Route exact path="/researcher" element={<Researcher />}></Route>
-          <Route exact path="/farmer/*" element={<Fam />}>
-
+          <Route exact path="/farmer/*" element={<Fam />}/>
+          <Route exact path="/buyer/*" element={<Buyer />}/>
+          <Route exact path="/researcher/*" element={<Researcher />}/>
                 
 
-          </Route>
+         
           <Route exact path="/chat" element={<ChatPage/>}></Route>
           <Route exact path="/researcher" element={<Reseacher/>}></Route>
           {/* <Route path='/farmer' element={<StartsDash/>}/>

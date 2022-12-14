@@ -8,9 +8,7 @@ import Transfers from "./Transfers";
 import Profile from "./Profile";
 import scrollreveal from "scrollreveal";
 import {Route, Routes,Link} from "react-router-dom";
-import Product from "../products/Product";
-import Buyer from "./Buyer";
-import Cart from "../cart/Cart";
+import Researchpost from "./Researchpost";
 
 function Dashboard() {
   useEffect(() => {
@@ -37,27 +35,12 @@ function Dashboard() {
   return (
     <Section className="farm">
       <NavBar />
-
       <div>
-      <Routes>
-            
-            {/* <Route path='/faqs' element={<FAQs/>}/> */}
-            <Route  path="/buyProducts" element={<Product />}/>
-            <Route  path="/myCart" element={<Cart />}/>
-            {/* <Route exact path="/buyer" element={<Buyer />}></Route> */}
-          </Routes>
+        <Routes>
+            <Route exact path="/researcherpost" element={<Researchpost />}/>
+        </Routes>
+
       </div>
-      {/* <div className="grid">
-        <div className="row__one">
-          <Analytics />
-          <FAQs />
-        </div>
-        <div className="row__two">
-          <Earnings />
-          <Transfers />
-          <Profile />
-        </div>
-      </div> */}
     </Section>
   );
 }

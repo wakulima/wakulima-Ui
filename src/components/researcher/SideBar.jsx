@@ -76,10 +76,10 @@ function SideBar() {
                 className={currentLink === 1 ? "active" : "none"}
                 onClick={() => setCurrentLink(1)}
               >
-                <a href="/">
+                 <Link to="/researcher/researcherpost">
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
-                </a>
+                </Link>
               </li>
               <li
                 className={currentLink === 2 ? "active" : "none"}
@@ -87,7 +87,7 @@ function SideBar() {
               >
                 <a href="/">
                   <RiDashboard2Fill />
-                  <span> Market Prices</span>
+                  <span>Research Posts</span>
                 </a>
               </li>
               <li
@@ -96,7 +96,7 @@ function SideBar() {
               >
                 <a href="/">
                   <FaAddressCard />
-                  <span> Payment Details</span>
+                  <span> Farmers Event</span>
                 </a>
               </li>
               <li
@@ -105,7 +105,7 @@ function SideBar() {
               >
                 <a href="/">
                   <GiTwirlCenter />
-                  <span> Learning Center</span>
+                  <span> Farmer's posts</span>
                 </a>
               </li>
               <li

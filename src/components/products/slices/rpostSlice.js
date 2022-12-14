@@ -13,13 +13,13 @@ const config = {
   headers: { Authorization: `Bearer ${token}` }
 };
 
-export const productsFetch = createAsyncThunk(
-  "products/productsFetch",
+export const research_infosFetch = createAsyncThunk(
+  "research_infos/research_infosFetch",
   async () => {
     
     try {
       const response = await axios.get(
-        "http://127.0.0.1:3000/products",
+        "http://127.0.0.1:3000/research_infos",
 
         {},
         
@@ -35,22 +35,22 @@ export const productsFetch = createAsyncThunk(
   }
 );
 
-const productsSlice = createSlice({
-  name: "products",
+const research_infosSlice = createSlice({
+  name: "research_infos",
   initialState,
   reducers: {},
   extraReducers: {
-    [productsFetch.pending]: (state, action) => {
+    [research_infosFetch.pending]: (state, action) => {
       state.status = "pending";
     },
-    [productsFetch.fulfilled]: (state, action) => {
+    [research_infosFetch.fulfilled]: (state, action) => {
       state.items = action.payload;
       state.status = "success";
     },
-    [productsFetch.rejected]: (state, action) => {
+    [research_infosFetch.rejected]: (state, action) => {
       state.status = "rejected";
     },
   },
 });
 
-export default productsSlice.reducer;
+export default research_infosSlice.reducer;

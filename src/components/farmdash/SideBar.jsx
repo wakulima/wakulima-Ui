@@ -96,7 +96,7 @@ function SideBar() {
                 className={currentLink === 8 ? "active" : "none"}
                 onClick={() => setCurrentLink(8)}
               >
-                <Link to={"/farmer/addProduct"}>
+                <Link to={"/farmer/farmProducts"}>
                   <RiDashboard2Fill />
                   <span> My Products</span>
                 </Link>
@@ -123,10 +123,10 @@ function SideBar() {
                 className={currentLink === 5 ? "active" : "none"}
                 onClick={() => setCurrentLink(5)}
               >
-                <a href="/">
+                <Link to={'/farmer/faqs'}>
                   <BsFillChatTextFill />
                   <span> FAQs</span>
-                </a>
+                </Link>
               </li>
               <li
                 className={currentLink === 6 ? "active" : "none"}
@@ -135,6 +135,15 @@ function SideBar() {
                 <a href="/">
                   <IoSettings />
                   <span> Settings</span>
+                </a>
+              </li>
+              <li
+                className={currentLink === 7 ? "active" : "none"}
+                onClick={() => setCurrentLink(7)}
+              >
+                <a href="/">
+                  <IoSettings />
+                  <span> Post issue</span>
                 </a>
               </li>
             </ul>

@@ -57,7 +57,7 @@ function LandingPage() {
                         <h1 className=' text-[#4DB852] font-bold tracking-wide'>WHO WE ARE</h1>
                         <h2 className='family-Poppins font-extrabold text-5xl max-w-[600px]'>We Ensure green environment and Food security across the region</h2>
                         <p className='text-black/50 max-w-[600px] text-lg'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam error nihil, dolorem explicabo accusamus est! Eius soluta exercitationem corporis ratione perspiciatis laborum! Totam, velit enim illum voluptatum iure sunt!
+                        Climate change is a real and present threat to African food security that is only set to get worse. Compounded with population growth, severe soil degradation across much of the continent, weak and disconnected markets, and limited access to up to date weather information, the situation could be very bleak. Better access to information through digital technology platforms however can help farmers to overcome some of these barriers to adaptation and growth.
                         </p>
                         <div >
                         <Link to={'/about'}>
@@ -77,9 +77,7 @@ function LandingPage() {
             <div className='space-x-16 w-fit m-auto space-y-12 pt-32'>
                 <h1 className=' text-[#4DB852] text-2xl underline font-bold tracking-wide'>Last 6 months Actions</h1>
                 
-                <p className=" text-black max-w-[900px] text-lg tracking-wide ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-                illo tenetur fuga ducimus numquam ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-                illo tenetur fuga ducimus numquam ea!
+                <p className=" text-black max-w-[900px] text-lg tracking-wide ">Accurate and easy to use Farm Management Information Systems/Applications are of fundamental importance for a successful operational agricultural sector. Enabled farmers to sell their products faster to avoid wastage of food through.
                     </p>
                     <div className='flex flex-row justify-center md:space-x-28 '>
                         <HeroTitles number={'250'} word={'Our Happy Customer'}/>
