@@ -31,9 +31,9 @@ function Dashboard() {
   }, []);
 
   return (
-    <Section className="farm">
+    <Section className="farm h-screen">
       <NavBar />
-      <div className="grid">
+      <div className="grid h-screen">
         <div className="row__one">
           <Analytics />
           <FAQs />

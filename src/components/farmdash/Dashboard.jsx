@@ -41,7 +41,7 @@ function Dashboard() {
   return (
     <Section className="farm">
       <NavBar />
-      <div>
+      <div className="h-screen">
         {/* <Chats/> */}
          
           <Routes>

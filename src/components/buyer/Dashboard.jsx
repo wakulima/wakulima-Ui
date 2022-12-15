@@ -35,10 +35,10 @@ function Dashboard() {
   }, []);
 
   return (
-    <Section className="farm">
+    <Section className="farm ">
       <NavBar />
 
-      <div>
+      <div className="h-screen">
       <Routes>
             
             {/* <Route path='/faqs' element={<FAQs/>}/> */}
