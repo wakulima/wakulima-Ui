@@ -9,7 +9,7 @@ function ServicesSection() {
         <div className='flex flex-col items-center space-y-10'>
             <h1 className='md:text-6xl text-3xl font-Prata text-[#005364]'>Featured Services</h1>
             <div>
-            <div className='flex md:flex-row flex-col justify-center items-center md:space-x-16 space-y-16 md:pt-32'>
+            <div className='flex md:flex-row flex-col justify-center items-center md:space-x-16 space-y-16 md:space-y-0 md:pt-32'>
 
                     <div className='text-center md:w-[400px] md:h-[400px] w-[300px] h-[300px]  shadow-2xl rounded-xl shadow-black/50 flex flex-col align-center items-center p-8 space-y-4'>
                         <div className='  w-[80px] h-[80px]  bg-[#4DB852] rounded-full items-center flex flex-col justify-center'>
