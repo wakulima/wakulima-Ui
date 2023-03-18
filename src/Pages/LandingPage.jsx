@@ -41,7 +41,7 @@ function LandingPage() {
         <section id='home'>    
             <HeroSection/>
         </section>
-        <section id='OUr company all ' className='all'>
+        {/* <section id='OUr company all ' className='all'>
             <div className='space-y-24 mx-8 py-16'>
                 <div className='flex flex-col items-center space-y-10'>
                     <h1 className='text-6xl font-Prata text-[#005364]'>Our General Company</h1>
@@ -49,7 +49,7 @@ function LandingPage() {
                 </div>
  
             <div className='pt-20'>
-                <div className='flex flex-row space-x-16  justify-center pt-10'>
+                <div className='flex md:flex-row flex-col space-x-16  justify-center pt-10'>
                     <div className='space-y-8'>
                         <h1 className=' text-[#4DB852] font-bold tracking-wide'>WHO WE ARE</h1>
                         <h2 className='family-Poppins font-extrabold text-5xl max-w-[600px]'>We Ensure green environment and Food security across the region</h2>
@@ -61,8 +61,8 @@ function LandingPage() {
                         <motion.button className='bg-[#4DB852] text-white tracking-wide  py-3 px-10 text-md uppercase rounded-3xl'>Discover More</motion.button></Link></div>
                     </div>
                     <div>
-                        <div className='w-[600px] h-[600px] bg-[#4DB852] p-6'>
-                            <img className='' src="https://media.istockphoto.com/id/1325471641/photo/portrait-of-a-happy-young-female-african-american-farmer-girl-standing-in-a-green-wheat-grass.jpg?s=612x612&w=0&k=20&c=Mdf--fqajzQpMmlyX27BSH0MAZLkClO1_WmGcPip0ho=" alt="" />
+                        <div className='md:w-[600px] md:h-[600px] bg-[#4DB852] p-4 md:p-6'>
+                            <img className='-mb-6 md:mb-0' src="https://media.istockphoto.com/id/1325471641/photo/portrait-of-a-happy-young-female-african-american-farmer-girl-standing-in-a-green-wheat-grass.jpg?s=612x612&w=0&k=20&c=Mdf--fqajzQpMmlyX27BSH0MAZLkClO1_WmGcPip0ho=" alt="" />
 
                         </div>
                     </div>
@@ -89,11 +89,11 @@ function LandingPage() {
         </section>
         <section id='services' className='py-20 all'>
             <Farm/>
-        </section>
+        </section> */}
         
      
         {/* <Footer/> */}
-        <Footer2/>
+        {/* <Footer2/> */}
 
       
     </div>
