@@ -93,7 +93,7 @@ function LandingPage() {
         
      
         {/* <Footer/> */}
-        {/* <Footer2/> */}
+        <Footer2/>
 
       
     </div>
