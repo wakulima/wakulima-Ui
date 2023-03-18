@@ -12,16 +12,16 @@ function HeroSection() {
 
       <div className="relative mx-auto w-screen px-4 py-32  h-screen justify-center    flex flex-row ">
         <div className="aloign-center space-y-14">
-        <h1 className="text-white text-6xl font-bold max-w-[900px] text-center">Green world & Food Security Solutions</h1>
+        <h1 className="text-white text-3xl md:text-6xl font-bold max-w-[900px] text-center">Green world & Food Security Solutions</h1>
         <p className="text-white max-w-[900px] text-lg tracking-wide text-center"><b>One of the sustainable approaches to food security is sustainable agricultural practices. Zero hunger is possible!</b></p>
 
-            <div className="flex flex-row space-x-8 justify-center ">
+            <div className="flex flex-row space-x-8 md:justify-center justify-between ">
             <Link to='/signup'>
-             <button className='hover:animate-pulse min-w-[250px] bg-[#4DB852] text-white tracking-wide  py-4 px-16 text-md uppercase hover:bg-[#A8CF45] rounded-3xl'>Discover More</button>
+             <button className='hover:animate-pulse md:min-w-[250px] w-[150px] bg-[#4DB852] text-white tracking-wide  md:py-4 py-2 md:px-16  md:text-md text-[14px] uppercase hover:bg-[#A8CF45] rounded-3xl'>Discover More</button>
             </Link>
            
            <Link to='login'>
-             <button className='min-w-[250px] bg-[white] text-[#4DB852] tracking-wide py-4 px-16 text-md uppercase rounded-3xl'>Login</button>
+             <button className='md:min-w-[250px] min-w-[150px] bg-[white] text-[#4DB852] tracking-wide md:py-4 py-2 md:px-16  md:text-md text-[14px] uppercase rounded-3xl'>Login</button>
            </Link>
             </div>
         </div>
