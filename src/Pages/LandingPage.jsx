@@ -84,13 +84,13 @@ function LandingPage() {
                     </div></div>
             </div>
         </section>
-        {/* <section className='bg-[#F0EFEB] py-32 all'>
+        <section className='bg-[#F0EFEB] md:py-32 py-8  all'>
             <ServicesSection/>
         </section>
-        <section id='services' className='py-20 all'>
+        {/* <section id='services' className='py-20 all'>
             <Farm/>
-        </section>
-         */}
+        </section> */}
+        
      
         {/* <Footer/> */}
         {/* <Footer2/> */}
